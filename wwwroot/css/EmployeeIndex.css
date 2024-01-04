@@ -1,0 +1,171 @@
+﻿body {
+}
+
+body header {
+    padding: 1% 0;
+}
+
+#svg-button {
+    padding: 0 0 2% 0;
+    margin: 0;
+    width: 2em;
+    height: 2em;
+    text-align: center;
+}
+
+#svg-button svg {
+    width: 1em;
+}
+
+table thead th {
+    position: sticky;
+}
+
+.table-container {
+    height: 80vh;
+}
+
+@media only screen and (max-width: 800px) {
+    /* Force table to not be like tables anymore */
+    #employee-table-index table,
+    #employee-table-index thead,
+    #employee-table-index tbody,
+    #employee-table-index th,
+    #employee-table-index td,
+    #employee-table-index tr {
+        display: block;
+    }
+    /* Hide table headers (but not display: none;, for accessibility) */
+    #employee-table-index thead tr {
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
+    }
+
+    #employee-table-index tr {
+        margin-bottom: 1em;
+    }
+
+    #employee-table-index td {
+        /* Behave  like a "row" */
+        position: relative;
+        padding-left: 50%;
+        white-space: normal;
+        text-align: center;
+        min-height: 2.5em;
+    }
+
+    #employee-table-index td:before {
+        /* Now like a table header */
+        position: absolute;
+        /* Top/left values mimic padding */
+        left: .5em;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
+        text-align: left;
+        font-weight: bold;
+    }
+    /*Label the data*/
+    #employee-table-index td:before {
+        content: attr(data-title);
+    }
+}
+
+.modal-delete-success .modal-content,
+.modal-delete .modal-content {
+    border-radius: 30px;
+}
+
+    .modal-delete-success .modal-content svg,
+    .modal-delete .modal-content svg {
+        width: 100px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    .modal-delete-success .modal-content .path,
+    .modal-delete .modal-content .path {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 0;
+    }
+
+        .modal-delete-success .modal-content .path.circle,
+        .modal-delete .modal-content .path.circle {
+            -webkit-animation: dash 0.9s ease-in-out;
+            animation: dash 0.9s ease-in-out;
+        }
+
+        .modal-delete-success .modal-content .path.line,
+        .modal-delete .modal-content .path.line {
+            stroke-dashoffset: 1000;
+            -webkit-animation: dash 0.95s 0.35s ease-in-out forwards;
+            animation: dash 0.95s 0.35s ease-in-out forwards;
+        }
+
+        .modal-delete-success .modal-content .path.check,
+        .modal-delete .modal-content .path.check {
+            stroke-dashoffset: -100;
+            -webkit-animation: dash-check 0.95s 0.35s ease-in-out forwards;
+            animation: dash-check 0.95s 0.35s ease-in-out forwards;
+        }
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 1000;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+@-webkit-keyframes dash-check {
+    0% {
+        stroke-dashoffset: -100;
+    }
+
+    100% {
+        stroke-dashoffset: 900;
+    }
+}
+
+@keyframes dash-check {
+    0% {
+        stroke-dashoffset: -100;
+    }
+
+    100% {
+        stroke-dashoffset: 900;
+    }
+}

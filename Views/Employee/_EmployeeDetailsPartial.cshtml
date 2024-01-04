@@ -1,0 +1,115 @@
+﻿@model Employee
+
+@if (Model != null)
+{
+    <section>
+        <div class="container-xl">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="card mb-4">
+                        <div class="card-body text-center">
+                            <h5 class="mt-0 mb-2 employee-id">@Model.ID</h5>
+                            <img src="@Model.UrlImage" alt="avatar"
+                                 class="rounded-circle img-fluid" style="width: 150px; height: 150px; object-fit: cover;">
+                            <h5 class="mt-2 mb-1">@Model.FullName</h5>
+                            <p class="text-muted">@Model.PositionName</p>
+                            <p class="employee-firstname-view" hidden>@Model.FirstName</p>
+                            <p class="employee-lastname-view" hidden>@Model.LastName</p>
+                            <div class="d-flex justify-content-center mb-2">
+                                <button type="button" class="btn btn-warning edit-employee" data-employee-id="@Model.ID">Edit</button>
+                                <button type="button" class="btn btn-success ms-1">Message</button>
+                                <button type="button" class="btn btn-secondary ms-1" data-bs-dismiss="modal" aria-label="Close">Close</button>
+                            </div>
+                            <div class="card-body text-center">
+                                <div class="d-flex justify-content-center mb-2">
+                                    <button type="button" class="btn btn-danger delete-employee ms-1" data-employee-id="@Model.ID">Delete</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="card mb-4">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <p class="mb-0">Full Name</p>
+                                </div>
+                                <div class="col-sm-8">
+                                    <p class="text-muted mb-0">@Model.FullName</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <p class="mb-0">Gender</p>
+                                </div>
+                                <div class="col-sm-8">
+                                    <p class="text-muted mb-0">@Model.Gender</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <p class="mb-0">Date Of Birth</p>
+                                </div>
+                                <div class="col-sm-8">
+                                    <p class="text-muted mb-0">@Model.DateOfBirth?.ToShortDateString()</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <p class="mb-0">Phone Number</p>
+                                </div>
+                                <div class="col-sm-8">
+                                    <p class="text-muted mb-0">@Model.PhoneNumber</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <p class="mb-0">Email</p>
+                                </div>
+                                <div class="col-sm-8">
+                                    <p class="text-muted mb-0">@Model.Email</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <p class="mb-0">Start Date</p>
+                                </div>
+                                <div class="col-sm-8">
+                                    <p class="text-muted mb-0">@Model.StartDate?.ToShortDateString()</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <p class="mb-0">Url Image</p>
+                                </div>
+                                <div class="col-sm-8">
+                                    <p class="text-muted mb-0">@Model.UrlImage</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <p class="mb-0">Address</p>
+                                </div>
+                                <div class="col-sm-8">
+                                    <p class="text-muted mb-0">Bay Area, San Francisco, CA</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+}
+else
+{
+    <p>Employee not found!</p>
+}
