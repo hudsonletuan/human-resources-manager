@@ -44,10 +44,9 @@ $(document).ready(function () {
                 $('#viewEmployeeModal').modal('hide');
                 $('#editEmployee').html(data);
                 $('#editEmployeeModal').modal('show');
-                getPositionOnOpen();
+                getPositionOnOpen("editEmployeeForm");
                 getGenderOptions("genderUpdate");
-                getGenderOnChange("genderUpdate");
-                getPositionbyDepartment("updateDpPs");
+                getPositionbyDepartment("editEmployeeForm");
                 imageUpdateChange("imageFileUpdate", "avatarImageUpdate");
             },
             error: function () {
@@ -58,16 +57,6 @@ $(document).ready(function () {
         });
     });
 
-    //Update Employee
-    //function imageUpdateChange () {
-    //    document.getElementById("imageFileUpdate").onchange = function () {
-    //        let reader = new FileReader();
-    //        reader.onload = function (e) {
-    //            document.getElementById("avatarImageUpdate").src = e.target.result; // get loaded data and render thumbnail.
-    //        };
-    //        reader.readAsDataURL(this.files[0]); // read the image file as a data URL.
-    //    };
-    //}
     function imageUpdateChange (fileId, avaId) {
         document.getElementById(fileId).onchange = function () {
             let reader = new FileReader();
@@ -83,8 +72,8 @@ $(document).ready(function () {
 
         let formData = new FormData(this);
         let positionID = $('#updateDpPs [name=positionName]').val();
-        let genderName = $("#genderValue").attr('value');
-        console.log(genderName + "gender");
+        //let genderName = $("#genderValue").attr('value');
+        let genderName = $('#genderUpdate').val();
         formData.append('positionID', positionID); // Append position ID
         formData.append('gender', genderName);
 
@@ -145,11 +134,8 @@ $(document).ready(function () {
         });
     });
 
-    $('#createEmployeeModal').on('show.bs.modal', function () {
-        
-        getGenderOptions("genderCreate");
-    });
-    getPositionbyDepartment("createDpPs");
+    getGenderOptions("genderCreate");
+    getPositionbyDepartment("createEmployeeForm");
 
     $('#createEmployeeForm').off('submit').on('submit', function (e) {
         e.preventDefault();
@@ -158,7 +144,7 @@ $(document).ready(function () {
         formData.append('imageFile', $('#imageFile')[0].files[0]); // Append imageFile element
 
         let positionID = $('#createDpPs [name=positionName]').val();
-        let genderName = $('#createDpPs [name=genderCreate]').val();
+        let genderName = $('#genderCreate').val();
         formData.append('positionID', positionID); // Append position ID
         formData.append('gender', genderName);
 
@@ -229,9 +215,10 @@ $(document).ready(function () {
     }
 
     //Get Positions by Department
-    function getPositionOnOpen () {
-        let departmentID = $('#updateDpPs [name=departmentName]').val();
-        let positionDropdown = document.getElementById("updateDpPs").querySelector("#positionName");
+    function getPositionOnOpen(divName) {
+        let departmentID = document.getElementById(divName).querySelector("#departmentName").value;
+        //let departmentID = $('#updateDpPs [name=departmentName]').val();
+        let positionDropdown = document.getElementById(divName).querySelector("#positionName");
         positionDropdown.innerHTML = "";
 
         if (departmentID !== "") {
@@ -239,8 +226,8 @@ $(document).ready(function () {
                 url: '/Employee/GetPositionsByDepartment?departmentID=' + departmentID,
                 type: 'GET',
                 success: function (data) {
-                    document.getElementById("updateDpPs").querySelector("#positionLabel").hidden = false;
-                    document.getElementById("updateDpPs").querySelector("#positionName").hidden = false;
+                    document.getElementById(divName).querySelector("#positionLabel").hidden = false;
+                    document.getElementById(divName).querySelector("#positionName").hidden = false;
 
                     let positionValue = $("#positionValue").attr('value');
 
@@ -266,8 +253,8 @@ $(document).ready(function () {
                 }
             });
         } else {
-            document.getElementById("updateDpPs").querySelector("#positionLabel").hidden = true;
-            document.getElementById("updateDpPs").querySelector("#positionName").hidden = true;
+            document.getElementById(divName).querySelector("#positionLabel").hidden = true;
+            document.getElementById(divName).querySelector("#positionName").hidden = true;
         }
     }
 
@@ -350,13 +337,42 @@ $(document).ready(function () {
 
             genderDropdown.appendChild(genderDropdownOption);
         });
-    }
+    }  
 
-    function getGenderOnChange(divGender) {
-        document.getElementById(divGender).onchange = function () {
-            let genderVal = this.options[this.selectedIndex].label;
-            $("#genderValue").attr('value', genderVal);
+
+
+    const search = document.querySelector('.input-group input'),
+        table_rows = document.querySelectorAll('tbody tr'),
+        table_headings = document.querySelectorAll('thead th');
+
+    // 2. Sorting | Ordering data of HTML table
+
+    table_headings.forEach((head, i) => {
+        let sort_asc = true;
+        head.onclick = () => {
+            table_headings.forEach(head => head.classList.remove('active'));
+            head.classList.add('active');
+
+            document.querySelectorAll('td').forEach(td => td.classList.remove('active'));
+            table_rows.forEach(row => {
+                row.querySelectorAll('td')[i].classList.add('active');
+            })
+
+            head.classList.toggle('asc', sort_asc);
+            sort_asc = head.classList.contains('asc') ? false : true;
+
+            sortTable(i, sort_asc);
         }
+    })
+
+
+    function sortTable(column, sort_asc) {
+        [...table_rows].sort((a, b) => {
+            let first_row = a.querySelectorAll('td')[column].textContent.toLowerCase(),
+                second_row = b.querySelectorAll('td')[column].textContent.toLowerCase();
+
+            return sort_asc ? (first_row < second_row ? 1 : -1) : (first_row < second_row ? -1 : 1);
+        })
+            .map(sorted_row => document.querySelector('tbody').appendChild(sorted_row));
     }
-    
 });

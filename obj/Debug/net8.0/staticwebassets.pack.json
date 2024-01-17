@@ -281,6 +281,30 @@
       "PackagePath": "staticwebassets\\images\\41a68735-573b-49ba-9276-c95bb77208fe.jpg"
     },
     {
+      "Id": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\Alex Gonley.jpg",
+      "PackagePath": "staticwebassets\\images\\Alex Gonley.jpg"
+    },
+    {
+      "Id": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\Alson GC.jpg",
+      "PackagePath": "staticwebassets\\images\\Alson GC.jpg"
+    },
+    {
+      "Id": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\Jeet Saru.jpg",
+      "PackagePath": "staticwebassets\\images\\Jeet Saru.jpg"
+    },
+    {
+      "Id": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\Sarita Limbu.jpg",
+      "PackagePath": "staticwebassets\\images\\Sarita Limbu.jpg"
+    },
+    {
+      "Id": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\Sonal Gharti.jpg",
+      "PackagePath": "staticwebassets\\images\\Sonal Gharti.jpg"
+    },
+    {
+      "Id": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\Zinzu Chan Lee.jpg",
+      "PackagePath": "staticwebassets\\images\\Zinzu Chan Lee.jpg"
+    },
+    {
       "Id": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\ava-default.png",
       "PackagePath": "staticwebassets\\images\\ava-default.png"
     },
@@ -289,12 +313,44 @@
       "PackagePath": "staticwebassets\\images\\b11c2d98-3c3d-4509-99d7-e16615436dc9.jpg"
     },
     {
+      "Id": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\csv.png",
+      "PackagePath": "staticwebassets\\images\\csv.png"
+    },
+    {
       "Id": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\da386f22-7e83-4cbb-9c2a-cbd1b08f72eb.jpg",
       "PackagePath": "staticwebassets\\images\\da386f22-7e83-4cbb-9c2a-cbd1b08f72eb.jpg"
     },
     {
+      "Id": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\excel.png",
+      "PackagePath": "staticwebassets\\images\\excel.png"
+    },
+    {
+      "Id": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\export.png",
+      "PackagePath": "staticwebassets\\images\\export.png"
+    },
+    {
       "Id": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\f0c42c9f-b29c-447f-9250-4e5c3717339c.jpg",
       "PackagePath": "staticwebassets\\images\\f0c42c9f-b29c-447f-9250-4e5c3717339c.jpg"
+    },
+    {
+      "Id": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\html_table.jpg",
+      "PackagePath": "staticwebassets\\images\\html_table.jpg"
+    },
+    {
+      "Id": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\json.png",
+      "PackagePath": "staticwebassets\\images\\json.png"
+    },
+    {
+      "Id": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\pdf.png",
+      "PackagePath": "staticwebassets\\images\\pdf.png"
+    },
+    {
+      "Id": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\screenshot.jpg",
+      "PackagePath": "staticwebassets\\images\\screenshot.jpg"
+    },
+    {
+      "Id": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\search.png",
+      "PackagePath": "staticwebassets\\images\\search.png"
     },
     {
       "Id": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\tuanquocle.jpg",

@@ -20,5 +20,9 @@ html {
 body {
   margin-bottom: 60px;
   font-family: 'Google Sans Mono';
-  background-color: black;
+}
+
+.container.body-container {
+    max-width: 95%;
+    margin: 0 auto;
 }
