@@ -25,10 +25,32 @@
             </div>
         </header>
         <div>
-            <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#createEmployeeModal" id="addEmployeeBtn">Add Employee</button>
+            
         </div>
         <br />
         <main id="employee-table-index" class="table">
+            <section class="table__header">
+                <section class="button-header">
+                    <button class="add-em-btn" data-bs-toggle="modal" data-bs-target="#createEmployeeModal" id="addEmployeeBtn">Add Employee</button>
+                    <button class="refresh-em-btn" id="refreshEmployeeBtn">Refresh List</button>
+                </section>
+
+                <div class="input-group">
+                    <input type="search" placeholder="Search Data...">
+                    <img src="/images/search.png" alt="">
+                </div>
+                <div class="export__file">
+                    <label for="export-file" class="export__file-btn" title="Export File"></label>
+                    <input type="checkbox" id="export-file">
+                    <div class="export__file-options">
+                        <label>Export As &nbsp; &#10140;</label>
+                        <label for="export-file" id="toPDF">PDF <img src="/images/pdf.png" alt=""></label>
+                        <label for="export-file" id="toJSON">JSON <img src="/images/json.png" alt=""></label>
+                        <label for="export-file" id="toCSV">CSV <img src="/images/csv.png" alt=""></label>
+                        <label for="export-file" id="toEXCEL">EXCEL <img src="/images/excel.png" alt=""></label>
+                    </div>
+                </div>
+            </section>
             <section class="tablemain">
                 <table class="tablehead">
                     <thead class="tablehead sticky-top">
@@ -36,6 +58,7 @@
                             <th class="text-center">ID <span class="icon-arrow">&UpArrow;</span></th>
                             <th class="text-center">First Name <span class="icon-arrow">&UpArrow;</span></th>
                             <th class="text-center">Last Name <span class="icon-arrow">&UpArrow;</span></th>
+                            <th class="text-center" hidden>Full Name <span class="icon-arrow">&UpArrow;</span></th>
                             <th class="text-center">Date Of Birth <span class="icon-arrow">&UpArrow;</span></th>
                             <th class="text-center">Phone Number <span class="icon-arrow">&UpArrow;</span></th>
                             <th class="text-center">Email <span class="icon-arrow">&UpArrow;</span></th>
@@ -53,6 +76,7 @@
                                     <td class="text-center employee-id" data-title="ID">@employee.ID</td>
                                     <td class="employee-firstname" data-title="First Name">@employee.FirstName</td>
                                     <td class="employee-lastname" data-title="Last Name">@employee.LastName</td>
+                                    <td class="employee-fullname" data-title="Full Name" hidden>@employee.FullName</td>
                                     <td class="text-center employee-dateofbirth" data-title="Date Of Birth">@employee.DateOfBirth?.ToShortDateString()</td>
                                     <td class="text-center employee-phonenumber" data-title="Phone Number">@employee.PhoneNumber</td>
                                     <td class="text-center employee-email" data-title="Email">@employee.Email</td>
@@ -97,7 +121,7 @@
         </main>
 
         <!-- Modal showing creating employee -->
-        <div class="modal fade" id="createEmployeeModal" tabindex="-1" role="dialog" data-bs-backdrop="static" aria-labelledby="createEmployeeModalLabel" aria-hidden="true">
+        <div class="modal fade" id="createEmployeeModal" tabindex="-1" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false" aria-labelledby="createEmployeeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
                 <div class="modal-content">
                     <div class="modal-header" hidden>

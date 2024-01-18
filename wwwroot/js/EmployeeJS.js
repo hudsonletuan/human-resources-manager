@@ -1,17 +1,40 @@
-﻿/*Show the whole employee list*/
-$(document).ready(function () {
+﻿$(function () {
+
+    /*Show the whole employee list*/
     function refreshEmployeeList() {
         $.ajax({
             url: '/Employee/GetEmployeeList',
             type: 'GET',
             success: function (data) {
                 $('#employeeTableBody').html(data);
+                resetTableSorting();
+                bindSortingEvent();
+                searchTableList();
+                $("#button-header").load(location.href + " #button-header");
             },
             error: function () {
                 alert('Data cannot be shown!');
             }
         });
     }
+
+    function resetTableSorting() {
+        const table_headings = document.querySelectorAll('.tablehead th');
+
+        table_headings.forEach((head) => {
+            head.classList.remove('active', 'asc');
+
+            // Reset the arrow indicator
+            const arrowSpan = head.querySelector('span.icon-arrow');
+            if (arrowSpan) {
+                arrowSpan.style.transform = '';
+                arrowSpan.classList.remove('active');
+            }
+        });
+    }
+
+    const refreshButton = document.getElementById('refreshEmployeeBtn');
+    refreshButton.addEventListener('click', refreshEmployeeList);
 
     //View Employee
     $(document).on('click', '.view-employee', function () {
@@ -129,7 +152,7 @@ $(document).ready(function () {
     imageUpdateChange("imageFile", "avatarImage");
     $(function () {
         // Show the modal when the button is clicked
-        $('#createEmployeeModalBtn').click(function () {
+        $('#createEmployeeModalBtn').on('click', function () {
             $('#createEmployeeModal').modal('show');
         });
     });
@@ -187,7 +210,7 @@ $(document).ready(function () {
         document.querySelector('.id-wrong').hidden = true;
 
     });
-    $('#ID').keyup(function () {
+    $('#ID').on('input', function () {
         iDCheck();
     });
 
@@ -337,42 +360,81 @@ $(document).ready(function () {
 
             genderDropdown.appendChild(genderDropdownOption);
         });
-    }  
+    }
 
+    // Searching for specific data of HTML table
 
+    function searchTableList() {
+        const search = document.querySelector('.input-group input');
+        const table_rows = document.querySelectorAll('#employeeTableBody tr');
 
-    const search = document.querySelector('.input-group input'),
-        table_rows = document.querySelectorAll('tbody tr'),
-        table_headings = document.querySelectorAll('thead th');
+        search.addEventListener('input', function () {
+            searchTable(search, table_rows);
+        });
 
-    // 2. Sorting | Ordering data of HTML table
+        searchTable(search, table_rows);
+    }
 
-    table_headings.forEach((head, i) => {
-        let sort_asc = true;
-        head.onclick = () => {
-            table_headings.forEach(head => head.classList.remove('active'));
-            head.classList.add('active');
+    function searchTable(search, table_rows) {
+        let visibleRowIndex = 0;
+        const searchTerms = search.value.toLowerCase().split(' ').filter(term => term.trim() !== '');
 
-            document.querySelectorAll('td').forEach(td => td.classList.remove('active'));
-            table_rows.forEach(row => {
-                row.querySelectorAll('td')[i].classList.add('active');
-            })
+        table_rows.forEach(row => {
+            let table_data = row.textContent.toLowerCase(),
+                search_data = search.value.toLowerCase();
 
-            head.classList.toggle('asc', sort_asc);
-            sort_asc = head.classList.contains('asc') ? false : true;
+            // Determine if the row should be visible (contains all search terms)
+            let isVisible = searchTerms.every(term => table_data.includes(term));
 
-            sortTable(i, sort_asc);
-        }
-    })
+            // Set display property based on search match
+            row.style.display = isVisible ? '' : 'none';
+
+            // Update row color based on its new index position
+            if (isVisible) {
+                row.style.backgroundColor = (visibleRowIndex % 2 === 0) ? 'transparent' : '#0000000b';
+                visibleRowIndex++;
+            }
+        });
+    }
+
+    searchTableList();
+
+    //Sorting | Ordering data of HTML table
+
+    function bindSortingEvent() {
+        const table_headings = document.querySelectorAll('.tablehead th');
+        const table_rows = document.querySelectorAll('#employeeTableBody tr');
+
+        table_headings.forEach((head, i) => {
+            let sort_asc = true;
+            head.onclick = () => {
+                table_headings.forEach(head => head.classList.remove('active'));
+                head.classList.add('active');
+
+                document.querySelectorAll('td').forEach(td => td.classList.remove('active'));
+                table_rows.forEach(row => {
+                    row.querySelectorAll('td')[i].classList.add('active');
+                })
+
+                head.classList.toggle('asc', sort_asc);
+                sort_asc = head.classList.contains('asc') ? false : true;
+
+                sortTable(i, sort_asc);
+            }
+        })
+    }
+
+    bindSortingEvent();
 
 
     function sortTable(column, sort_asc) {
+        const table_rows = document.querySelectorAll('#employeeTableBody tr');
         [...table_rows].sort((a, b) => {
             let first_row = a.querySelectorAll('td')[column].textContent.toLowerCase(),
                 second_row = b.querySelectorAll('td')[column].textContent.toLowerCase();
 
             return sort_asc ? (first_row < second_row ? 1 : -1) : (first_row < second_row ? -1 : 1);
         })
-            .map(sorted_row => document.querySelector('tbody').appendChild(sorted_row));
+            .forEach(sorted_row => document.querySelector('#employeeTableBody').appendChild(sorted_row));
     }
 });
