@@ -56,7 +56,7 @@ namespace ManagerWebApplication.Controllers
         [HttpGet]
         public IActionResult GetEmployeeDetails(string id)
         {
-            Employee employee = _dal.GetEmployeeByID(id);
+            Employee? employee = _dal.GetEmployeeByID(id);
             if (employee != null)
             {
                 return PartialView("_EmployeeDetailsPartial", employee);
@@ -83,7 +83,7 @@ namespace ManagerWebApplication.Controllers
                     string imageName = employee.ID + "-" + DateTime.Now.ToString("yyyyMMddHHmmss") + Path.GetExtension(imageFile.FileName);
 
                     // Path to save image
-                    string imagePath = Path.Combine(_hostEnvironment.WebRootPath, "images", imageName);
+                    string imagePath = Path.Combine(_hostEnvironment.WebRootPath, "hr_images/avatar", imageName);
 
                     // Save image to path
                     using (var imageStream = new FileStream(imagePath, FileMode.Create))
@@ -92,12 +92,12 @@ namespace ManagerWebApplication.Controllers
                     }
 
                     // Set URL to save
-                    employee.UrlImage = "/images/" + imageName;
+                    employee.AvaName = "/hr_images/avatar/" + imageName;
                 }
                 else
                 {
                     // No new image selected, retain the existing URL
-                    employee.UrlImage = "/images/ava-default.png";
+                    employee.AvaName = "/hr_images/avatar/ava-default.png";
                 }
 
                 if (ModelState.IsValid || (employee.ID != null && employee.FirstName != null && employee.LastName != null && employee.PositionID != null))
@@ -114,6 +114,30 @@ namespace ManagerWebApplication.Controllers
             return RedirectToAction("Index");
         }
 
+        [HttpPost]
+        public IActionResult ImportEmployees(IFormFile eFile)
+        {
+            if (eFile != null && eFile.Length > 0)
+            {
+                string eFileExtension = Path.GetExtension(eFile.FileName);
+                string tempDirectory = Path.GetTempPath();
+                string tempFileName = Guid.NewGuid().ToString() + eFileExtension;
+                string eFilePath = Path.Combine(tempDirectory, tempFileName);
+                using (var stream = new FileStream(eFilePath, FileMode.Create))
+                {
+                    eFile.CopyTo(stream);
+                }
+
+                var employees = _dal.ReadEmployeeFile(eFilePath);
+                _dal.InsertEmployees(employees);
+
+                // Delete the file after importing
+                System.IO.File.Delete(eFilePath);
+
+                return Json(new { success = true });
+            }
+            return Json(new { success = false, message = "No file uploaded or the file is empty." });
+        }
 
         [HttpGet]
         public IActionResult Delete(string ID)
@@ -131,10 +155,33 @@ namespace ManagerWebApplication.Controllers
             return RedirectToAction("GetEmployeeList");
         }
 
+        [HttpPost]
+        public IActionResult BulkDelete(List<string> IDs)
+        {
+            try
+            {
+                if (IDs == null || IDs.Count == 0)
+                {
+                    TempData["errorMessage"] = "No employee selected";
+                    return RedirectToAction("Index");
+                }
+                
+                foreach (var ID in IDs)
+                {
+                    _dal.DeleteEmployee(ID);
+                }
+                return Json(new { success = true, message = "Deleted!" });
+            }
+            catch (Exception ex)
+            {
+                return Json(new { success = false, message = ex.Message });
+            }
+        }
+
         [HttpGet]
         public IActionResult GetEmployeeEdit(string ID)
         {
-            Employee employee = _dal.GetEmployeeByID(ID);
+            Employee? employee = _dal.GetEmployeeByID(ID);
             List<Employee> departments = _dal.GetAllDepartments();
             ViewData["Departments"] = departments;
 
@@ -144,32 +191,35 @@ namespace ManagerWebApplication.Controllers
         }
 
         [HttpPost]
-        public IActionResult Update(Employee employee, IFormFile imageFile)
+        public IActionResult Update(Employee employee, IFormFile imageFileUpdate)
         {
             try
             {
-                if (imageFile != null && imageFile.Length > 0)
+                if (imageFileUpdate != null && imageFileUpdate.Length > 0)
                 {
                     // Image file name
-                    string imageName = employee.ID + "-" + employee.FirstName + "-" + employee.LastName + Path.GetExtension(imageFile.FileName);
+                    string imageName = employee.ID + "-" + DateTime.Now.ToString("yyyyMMddHHmmss") + Path.GetExtension(imageFileUpdate.FileName);
 
                     // Path to save image
-                    string imagePath = Path.Combine(_hostEnvironment.WebRootPath, "images", imageName);
+                    string imagePath = Path.Combine(_hostEnvironment.WebRootPath, "hr_images/avatar", imageName);
 
                     // Save image to path
                     using (var imageStream = new FileStream(imagePath, FileMode.Create))
                     {
-                        imageFile.CopyTo(imageStream);
+                        imageFileUpdate.CopyTo(imageStream);
                     }
 
                     // Set URL to save
-                    employee.UrlImage = "/images/" + imageName;
+                    employee.AvaName = "/hr_images/avatar/" + imageName;
                 }
                 else
                 {
                     // No new image selected, retain the existing URL
-                    Employee existingEmployee = _dal.GetEmployeeByID(employee.ID);
-                    employee.UrlImage = existingEmployee.UrlImage;
+                    Employee? existingEmployee = _dal.GetEmployeeByID(employee.ID!);
+                    if (existingEmployee != null)
+                    {
+                        employee.AvaName = existingEmployee.AvaName;
+                    }
                 }
 
                 if (ModelState.IsValid || (employee.ID != null && employee.FirstName != null && employee.LastName != null && employee.PositionID != null))

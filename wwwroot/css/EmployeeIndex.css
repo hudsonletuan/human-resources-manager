@@ -39,38 +39,49 @@ main.table {
     align-items: center;
 }
 
-.table__header button {
+.table__header .button-header button {
     border: 2px solid;
     border-radius: 30px;
-    padding: .5rem 1rem;
+    padding: .5rem .6rem;
     font-size: 16px;
     cursor: pointer;
     margin-right: .3rem;
 }
 
-.table__header .add-em-btn {
+.table__header .button-header .add-em-btn {
     border-color: #04AA6D;
 }
 
-.table__header .add-em-btn:hover {
+.table__header .button-header .add-em-btn:hover {
     border-color: #04AA6D;
     background-color: #04AA6D;
     transition: .2s;
 }
 
-.table__header .refresh-em-btn {
+.table__header .button-header .refresh-em-btn {
     border-color: #2196F3;
 }
 
-.table__header .refresh-em-btn:hover {
+.table__header .button-header .refresh-em-btn:hover {
     border-color: #2196F3;
     background-color: #2196F3;
     transition: .2s;
 }
 
+
+.table__header .multiple-select .mul-select-btn {
+    border-color: #ff9800;
+}
+
+.table__header .multiple-select .mul-select-btn.active {
+    border-color: #ff9800;
+    background-color: #ff9800;
+    transition: .2s;
+}
+
 .table__header .input-group {
-    width: 35%;
-    height: 100%;
+    width: 20%;
+    height: 40px;
     background-color: #fff5;
     padding: 0 .8rem;
     border-radius: 2rem;
@@ -81,20 +92,24 @@ main.table {
 }
 
 .table__header .input-group:hover {
-    width: 45%;
+    width: 30%;
     background-color: #fff8;
     box-shadow: 0 .1rem .4rem #0002;
 }
 
-.table__header .input-group img {
+.table__header .input-group svg {
     background-color: transparent;
-    width: 2em;
-    height: 2em;
+    color: #212529;
+    width: 2.5em;
+    height: 2.5em;
+    margin-left: 10px;
 }
 
 .table__header .input-group input {
-    width: 100%;
-    padding: 0 .5rem 0 .3rem;
+    color: black;
+    width: calc(100% - 40px);
+    height: 100%;
+    padding: 0 .5rem .1rem .3rem;
     background-color: transparent;
     border: none;
     outline: none;
@@ -165,7 +180,6 @@ thead th {
     position: sticky;
     top: 0;
     left: 0;
-    /*background-color: #d5d1defe;*/
     cursor: pointer;
     text-transform: capitalize;
 }
@@ -188,14 +202,11 @@ tbody tr:hover {
     background-color: #fff6 !important;
 }
 
-tbody tr td,
-tbody tr td p,
-tbody tr td img {
+tbody tr td, tbody tr td p, tbody tr td img {
     transition: .2s ease-in-out;
 }
 
-tbody tr.hide td,
-tbody tr.hide td p {
+tbody tr.hide td, tbody tr.hide td p {
     padding: 0;
     font: 0 / 0;
     transition: .2s ease-in-out .5s;
@@ -228,8 +239,6 @@ thead th:hover {
 }
 
 thead th.active span.icon-arrow {
-    /*background-color: #6c00bd;
-    color: #fff;*/
     border: 1.4px solid;
 }
 
@@ -241,21 +250,40 @@ thead th.active, tbody td.active {
     
 }
 
-@media (max-width: 1000px) {
-    .table__header .button-header {
-        flex-direction: column;
+@media (max-width: 800px) {
+    .table__header .input-group {
+        width: 20%;
+        height: 30px;
+        margin-right: 5px;
+    }
+    .table__header .input-group:hover {
+        width: 30%;
+    }
+    .table__header .input-group input::placeholder {
+        color: transparent;
+    }
+    .table__header .input-group svg {
+        width: 2em;
+        height: 2em;
     }
 
-    .table__header .btn {
-        margin-bottom: 10px;
+    .table__header .button-header button {
+        padding: 0.3rem 0.5rem;
+        font-size: 14px;
+    }
+    .table__header .multiple-select .mul-select-btn {
+        padding: 0.2rem 0.4rem;
+        font-size: 12px;
+    }
+    .table__header .multiple-select .dropdown-bulk-action {
+        padding: 0.2rem 0.4rem;
+        font-size: 12px;
     }
 
     td:not(:first-of-type) {
         min-width: 12.1rem;
     }
-}
 
-@media only screen and (max-width: 800px) {
     /* Force table to not be like tables anymore */
     #employee-table-index table,
     #employee-table-index thead,
@@ -299,6 +327,39 @@ thead th.active, tbody td.active {
     /*Label the data*/
     #employee-table-index td:before {
         content: attr(data-title);
+    }
+}
+
+@media (max-width: 670px) {
+    .table__header .button-header {
+        flex-direction: column;
+        margin-left: 5px;
+        gap: 2px;
+    }
+
+    .table__header .button-header button {
+        padding: 0.1rem 0.5rem;
+        font-size: 12px;
+    }
+
+    .table__header .multiple-select {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+    }
+    .table__header .multiple-select .mul-select-btn {
+        padding: .1rem 0.4rem;
+        font-size: 10px;
+    }
+
+    .table__header .multiple-select .dropdown-bulk-action {
+        padding: 0.1rem 0.4rem;
+        font-size: 10px;
+    }
+
+    .bulk-action-menu a.dropdown-item {
+        font-size: 10px !important;
+        padding: 0.3rem 0.5rem !important;
     }
 }
 
@@ -404,7 +465,7 @@ thead th.active, tbody td.active {
     display: inline-block;
     width: 2rem;
     height: 2rem;
-    background: #fff6 url(/images/export.png) center / 80% no-repeat;
+    background: #fff6 url(/hr_images/others/export.png) center / 80% no-repeat;
     border-radius: 50%;
     transition: .2s ease-in-out;
 }
@@ -459,6 +520,13 @@ thead th.active, tbody td.active {
     margin: 0 0 0.2rem 0
 }
 
+.emp-upload {
+    border-radius: 0.5rem;
+    padding: 1rem 0;
+    border: 2px solid #fff4;
+    margin: 0.19rem 0 0.19rem 0
+}
+
 .export__file .export__file-options label:hover {
     border-radius: 0.5rem;
     transform: scale(1.05);
@@ -469,4 +537,141 @@ thead th.active, tbody td.active {
 .export__file .export__file-options img {
     width: 2rem;
     height: auto;
+}
+
+
+.import__file .import__file-btn {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    background: #fff6 url(/hr_images/others/import.svg) no-repeat;
+    background-position: 30% center;
+    background-size: 70%;
+    border-radius: 50%;
+    transition: .2s ease-in-out;
+}
+
+.import__file .import__file-btn:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.import__file input {
+    display: none;
+}
+
+.import__file .import__file-options {
+    position: absolute;
+    left: 0;
+    width: 12rem;
+    border-radius: .5rem;
+    overflow: hidden;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(.8);
+    transform-origin: top left;
+    box-shadow: 0 .2rem .5rem #0004;
+    transition: opacity 0.2s, transform 0.2s, visibility 0s .2s;
+}
+
+.import__file input:checked + .import__file-options {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+    z-index: 1030;
+    transition-delay: 0s;
+}
+
+.import__file .import__file-options label {
+    display: block;
+    width: 100%;
+    padding: .6rem 0;
+    background-color: #212529;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: .2s ease-in-out;
+}
+
+.import__file .import__file-options label:first-of-type {
+    border-radius: 0.5rem;
+    padding: 1rem 0;
+    background-color: #fff4 !important;
+    margin: 0 0 0.2rem 0
+}
+
+.import__file .import__file-options label:hover {
+    border-radius: 0.5rem;
+    transform: scale(1.05);
+    background-color: #fff4;
+    cursor: pointer;
+}
+
+.import__file .import__file-options img {
+    width: 2rem;
+    height: auto;
+}
+
+.table__header .multiple-select button {
+    border: 2px solid;
+    border-radius: 30px;
+    padding: .3rem .5rem;
+    font-size: 14px;
+    cursor: pointer;
+    margin-right: .3rem;
+}
+
+/* Dropdown Button */
+.table__header .multiple-select .dropdown-bulk-action {
+    background-color: transparent;
+    transition: .2s;
+}
+
+/* Dropdown button on hover & focus */
+.table__header .multiple-select .dropdown-bulk-action:hover, .multiple-select .dropdown-bulk-action:focus {
+    background-color: #212529;
+    transition: .2s;
+}
+
+/* Container for dropdown items */
+.table__header .dropdown {
+    text-align: center;
+    padding: 0;
+    position: relative;
+    display: inline-block;
+    background-color: transparent !important;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.table__header .bulk-action-menu {
+    display: none;
+    position: absolute;
+    margin-top: 0.2rem;
+    right: 1rem;
+    border-radius: 0.5rem;
+    background-color: #212529;
+    box-shadow: 0 .2rem .5rem #0004;
+    z-index: 1;
+}
+
+.table__header .bulk-action-menu.show {
+    z-index: 1030;
+    display: block;
+}
+
+/* Links inside the dropdown */
+.table__header .bulk-action-menu a {
+    text-align: right;
+    font-size: 14px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Change color of dropdown links on hover */
+.table__header .bulk-action-menu a:hover {
+    background-color: #FFF4;
+    border-radius: .5rem;
+    transition: .2s;
 }

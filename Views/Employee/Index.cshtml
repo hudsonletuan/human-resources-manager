@@ -30,24 +30,48 @@
         <br />
         <main id="employee-table-index" class="table">
             <section class="table__header">
-                <section class="button-header">
+                <div class="import__file">
+                    <label for="import-file" class="import__file-btn" title="Import File"></label>
+                    <input type="checkbox" id="import-file">
+                    <div class="import__file-options">
+                        <label>&#10140; &nbsp; Import File</label>
+                        <label for="import-file" class="temp-down">&#8595; Template <img src="/hr_images/others/tempfile.svg" alt=""></label>
+                        <label for="import-file" class="emp-upload" id="uploadEmpFile">&#8593; Upload <img src="/hr_images/others/addfile.svg" alt=""></label>
+                        <input type="file" id="employeeFile" name="eFile" style="display: none;" accept=".csv, .xls, .xlsx">
+                    </div>
+                </div>
+                <div class="button-header">
                     <button class="add-em-btn" data-bs-toggle="modal" data-bs-target="#createEmployeeModal" id="addEmployeeBtn">Add Employee</button>
                     <button class="refresh-em-btn" id="refreshEmployeeBtn">Refresh List</button>
-                </section>
+                </div>
+                <div class="multiple-select">
+                    <button id="btn-multiple" class="mul-select-btn">Multiple Select</button>
+                    <div class="dropdown" hidden>
+                    <button class="dropdown-bulk-action" id="dropdownBulkAction">Bulk Action &#9660;</button>
+                        <div class="bulk-action-menu" id="menuBulkAction">
+                            <a class="dropdown-item bulk-del" href="#">Delete</a>
+                            <a class="dropdown-item select-all" href="#">Select All</a>
+                            <a class="dropdown-item unselect-all" href="#">Unselect All</a>
+                        </div>
+                    </div>
+                </div>
+                
 
                 <div class="input-group">
-                    <input type="search" placeholder="Search Data...">
-                    <img src="/images/search.png" alt="">
+                    <input type="search" placeholder="Search ...">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+                        <path fill="currentColor" d="m226.83 221.17l-52.7-52.7a84.1 84.1 0 1 0-5.66 5.66l52.7 52.7a4 4 0 0 0 5.66-5.66M36 112a76 76 0 1 1 76 76a76.08 76.08 0 0 1-76-76" />
+                    </svg>
                 </div>
                 <div class="export__file">
                     <label for="export-file" class="export__file-btn" title="Export File"></label>
                     <input type="checkbox" id="export-file">
                     <div class="export__file-options">
                         <label>Export As &nbsp; &#10140;</label>
-                        <label for="export-file" id="toPDF">PDF <img src="/images/pdf.png" alt=""></label>
-                        <label for="export-file" id="toJSON">JSON <img src="/images/json.png" alt=""></label>
-                        <label for="export-file" id="toCSV">CSV <img src="/images/csv.png" alt=""></label>
-                        <label for="export-file" id="toEXCEL">EXCEL <img src="/images/excel.png" alt=""></label>
+                        <label for="export-file" id="toEXCEL">EXCEL <img src="/hr_images/others/excel.png" alt=""></label>
+                        <label for="export-file" id="toPDF">PDF <img src="/hr_images/others/pdf.png" alt=""></label>
+                        <label for="export-file" id="toJSON" hidden>JSON <img src="/hr_images/others/json.png" alt=""></label>
+                        <label for="export-file" id="toCSV">CSV <img src="/hr_images/others/csv.png" alt=""></label>
                     </div>
                 </div>
             </section>
@@ -55,10 +79,10 @@
                 <table class="tablehead">
                     <thead class="tablehead sticky-top">
                         <tr>
+                            <th></th>
                             <th class="text-center">ID <span class="icon-arrow">&UpArrow;</span></th>
                             <th class="text-center">First Name <span class="icon-arrow">&UpArrow;</span></th>
                             <th class="text-center">Last Name <span class="icon-arrow">&UpArrow;</span></th>
-                            <th class="text-center" hidden>Full Name <span class="icon-arrow">&UpArrow;</span></th>
                             <th class="text-center">Date Of Birth <span class="icon-arrow">&UpArrow;</span></th>
                             <th class="text-center">Phone Number <span class="icon-arrow">&UpArrow;</span></th>
                             <th class="text-center">Email <span class="icon-arrow">&UpArrow;</span></th>
@@ -73,6 +97,7 @@
                             @foreach (var employee in Model)
                             {
                                 <tr>
+                                    <td><input type="checkbox" class="row-checkbox" style="display: none;" /></td>
                                     <td class="text-center employee-id" data-title="ID">@employee.ID</td>
                                     <td class="employee-firstname" data-title="First Name">@employee.FirstName</td>
                                     <td class="employee-lastname" data-title="Last Name">@employee.LastName</td>

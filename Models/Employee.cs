@@ -59,9 +59,9 @@ namespace ManagerWebApplication.Models
 
         public Employee()
         {
-            UrlImage = ""; // Initialize UrlImage with an empty string
+            AvaName = ""; // Initialize UrlImage with an empty string
         }
-        public string? UrlImage { get; set; }
+        public string? AvaName { get; set; }
 
         [NotMapped]
         public string? FullName

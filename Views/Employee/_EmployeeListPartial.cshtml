@@ -5,10 +5,10 @@
     @foreach (var employee in Model)
     {
         <tr>
+            <td><input type="checkbox" class="row-checkbox" style="display: none;" /></td>
             <td class="text-center employee-id" data-title="ID">@employee.ID</td>
             <td class="employee-firstname" data-title="First Name">@employee.FirstName</td>
             <td class="employee-lastname" data-title="Last Name">@employee.LastName</td>
-            <td class="employee-fullname" data-title="Full Name" hidden>@employee.FullName</td>
             <td class="text-center employee-dateofbirth" data-title="Date Of Birth">@employee.DateOfBirth?.ToShortDateString()</td>
             <td class="text-center employee-phonenumber" data-title="Phone Number">@employee.PhoneNumber</td>
             <td class="text-center employee-email" data-title="Email">@employee.Email</td>

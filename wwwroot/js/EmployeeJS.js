@@ -31,6 +31,12 @@
                 arrowSpan.classList.remove('active');
             }
         });
+
+        if ($('#btn-multiple').hasClass('active')) {
+            $('.row-checkbox').css('display', 'block');
+        } else {
+            $('.row-checkbox').css('display', 'none');
+        }
     }
 
     const refreshButton = document.getElementById('refreshEmployeeBtn');
@@ -94,8 +100,8 @@
         e.preventDefault();
 
         let formData = new FormData(this);
+
         let positionID = $('#updateDpPs [name=positionName]').val();
-        //let genderName = $("#genderValue").attr('value');
         let genderName = $('#genderUpdate').val();
         formData.append('positionID', positionID); // Append position ID
         formData.append('gender', genderName);
@@ -147,6 +153,98 @@
         });
     });
 
+    // Bulk Action Dropdown
+    document.getElementById("dropdownBulkAction").onclick = function () {
+        var menuBulkAction = document.getElementById("menuBulkAction");
+        menuBulkAction.classList.toggle("show");
+
+        // Check if the dropdown is not visible and remove focus from the button
+        if (!menuBulkAction.classList.contains('show')) {
+            this.blur();
+        }
+    }
+
+    $('#btn-multiple').on('click', function () {
+        $(this).toggleClass('active');
+
+        const dropdown = document.querySelector('.dropdown');
+        if (dropdown.hasAttribute('hidden')) {
+            dropdown.removeAttribute('hidden');
+        } else {
+            dropdown.setAttribute('hidden', 'true');
+        }
+
+        if ($(this).hasClass('active')) {
+            $('.row-checkbox').css('display', 'block');
+        } else {
+            $('.row-checkbox').css('display', 'none');
+        }
+    });
+
+    // Select All & Unselect All
+    $('.select-all').on('click', function (e) {
+        e.preventDefault();
+        document.querySelectorAll('.row-checkbox').forEach(checkbox => {
+            checkbox.checked = true;
+        });
+    });
+    $('.unselect-all').on('click', function (e) {
+        e.preventDefault();
+        document.querySelectorAll('.row-checkbox').forEach(checkbox => {
+            checkbox.checked = false;
+        });
+    });
+
+
+    // Close the dropdown if the user clicks outside of it
+    window.onclick = function (event) {
+        if (!event.target.matches('.dropdown-bulk-action')) {
+            var dropdowns = document.getElementsByClassName("bulk-action-menu");
+            for (var i = 0; i < dropdowns.length; i++) {
+                var openDropdown = dropdowns[i];
+                if (openDropdown.classList.contains('show')) {
+                    openDropdown.classList.remove('show');
+                    // Remove focus from the button when dropdown is closed
+                    document.getElementById("dropdownBulkAction").blur();
+                }
+            }
+        }
+    }
+
+    // Bulk Delete Employee
+    $('.bulk-del').on('click', function (e) {
+        e.preventDefault();
+
+        let selectedIDs = [];
+        $('.row-checkbox:checked').each(function () {
+            let id = $(this).closest('tr').find('.employee-id').text();
+            selectedIDs.push(id);
+        });
+
+        if (selectedIDs.length === 0) {
+            alert('No employee selected');
+            return;
+        }
+
+        if (confirm('Are you sure you want to delete these employees?')) {
+            $.ajax({
+                url: '/Employee/BulkDelete',
+                type: 'POST',
+                data: { ids: selectedIDs },
+                success: function (response) {
+                    if (response.success) {
+                        alert('Employees deleted successfully');
+                        refreshEmployeeList();
+                    } else {
+                        alert('Error deleting employees');
+                    }
+                },
+                error: function () {
+                    alert('Error deleting employees');
+                }
+            });
+        }
+    });
 
     //Create Employee
     imageUpdateChange("imageFile", "avatarImage");
@@ -426,7 +524,6 @@
 
     bindSortingEvent();
 
-
     function sortTable(column, sort_asc) {
         const table_rows = document.querySelectorAll('#employeeTableBody tr');
         [...table_rows].sort((a, b) => {
@@ -437,4 +534,38 @@
         })
             .forEach(sorted_row => document.querySelector('#employeeTableBody').appendChild(sorted_row));
     }
+
+    //Import Employee Data
+    const eUploadBtn = document.getElementById('uploadEmpFile');
+    const eFileInput = document.getElementById('employeeFile');
+
+    eUploadBtn.addEventListener('click', function () { 
+        eFileInput.click();
+    });
+
+    eFileInput.addEventListener('change', function () {
+        const eFile = this.files[0];
+        const formData = new FormData();
+        formData.append('eFile', eFile);
+
+        $.ajax({
+            url: "/Employee/ImportEmployees",
+            type: "POST",
+            data: formData,
+            processData: false,
+            contentType: false,
+            success: function (data) {
+                if (data.success) {
+                    alert('Imported successfully');
+                    refreshEmployeeList();
+                } else {
+                    alert('Error importing employees');
+                }
+            },
+            error: function (error) {
+                alert('Error importing employees');
+                console.log(error);
+            }
+        });
+    });
 });

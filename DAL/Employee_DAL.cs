@@ -1,6 +1,9 @@
 ﻿using ManagerWebApplication.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Data.SqlClient;
+using System.Reflection;
+using ExcelDataReader;
+using System.Data;
 
 namespace ManagerWebApplication.DAL
 {
@@ -51,7 +54,7 @@ namespace ManagerWebApplication.DAL
                         employee.StartDate = startDate;
                         DateTime? endDate = DateTime.TryParse(reader["EndDate"].ToString(), out tempDate) ? tempDate : (DateTime?)null;
                         employee.EndDate = endDate;
-                        employee.UrlImage = reader["UrlImage"].ToString();
+                        employee.AvaName = reader["AvaName"].ToString();
                         employeeList.Add(employee);
                     }
                 }
@@ -97,7 +100,7 @@ namespace ManagerWebApplication.DAL
                         employee.StartDate = startDate;
                         DateTime? endDate = DateTime.TryParse(reader["EndDate"].ToString(), out tempDate) ? tempDate : (DateTime?)null;
                         employee.EndDate = endDate;
-                        employee.UrlImage = reader["UrlImage"].ToString();
+                        employee.AvaName = reader["AvaName"].ToString();
 
                         return employee;
                     }
@@ -145,7 +148,7 @@ namespace ManagerWebApplication.DAL
                     command.Parameters.AddWithValue("@Salary", employee.Salary ?? (object)DBNull.Value);
                     command.Parameters.AddWithValue("@StartDate", employee.StartDate ?? (object)DBNull.Value);
                     command.Parameters.AddWithValue("@EndDate", employee.EndDate ?? (object)DBNull.Value);
-                    command.Parameters.AddWithValue("@UrlImage", employee.UrlImage ?? (object)DBNull.Value);
+                    command.Parameters.AddWithValue("@AvaName", employee.AvaName ?? (object)DBNull.Value);
 
                     connection.Open();
                     command.ExecuteNonQuery();
@@ -175,12 +178,192 @@ namespace ManagerWebApplication.DAL
                     command.Parameters.AddWithValue("@Salary", employee.Salary ?? (object)DBNull.Value);
                     command.Parameters.AddWithValue("@StartDate", employee.StartDate ?? (object)DBNull.Value);
                     command.Parameters.AddWithValue("@EndDate", employee.EndDate ?? (object)DBNull.Value);
-                    command.Parameters.AddWithValue("@UrlImage", employee.UrlImage ?? (object)DBNull.Value);
+                    command.Parameters.AddWithValue("@AvaName", employee.AvaName ?? (object)DBNull.Value);
 
                     connection.Open();
                     command.ExecuteNonQuery();
                     connection.Close();
                 }
+            }
+        }
+
+        public List<Employee> ReadEmployeeFile(string filePath)
+        {
+            List<Employee> employeeList = new List<Employee>();
+            string fileExtension = Path.GetExtension(filePath).ToLowerInvariant(); // Case insensitive
+            try
+            {
+                if (fileExtension == ".csv")
+                {
+                    using (var reader = new StreamReader(filePath))
+                    {
+                        string? line = reader.ReadLine();
+                        if (line == null) return employeeList;
+
+                        string[] headers = line.Split(',');
+                        PropertyInfo[] properties = typeof(Employee).GetProperties();
+
+                        while (!reader.EndOfStream)
+                        {
+                            line = reader.ReadLine();
+                            if (string.IsNullOrWhiteSpace(line)) continue;
+                            //if (line == null) continue;
+
+                            var values = line.Split(',');
+                            if (values.All(string.IsNullOrWhiteSpace)) continue;
+                            Employee employee = new Employee();
+                            for (int i = 0; i < headers.Length; i++)
+                            {
+                                string? headerName = i < headers.Length ? headers[i].Trim() : null;
+                                if (string.IsNullOrWhiteSpace(headerName)) continue;
+
+                                PropertyInfo? property = properties.FirstOrDefault(p => p.Name.Equals(headers[i].Trim(), StringComparison.InvariantCultureIgnoreCase));
+                                if (property != null && i < values.Length && !string.IsNullOrWhiteSpace(values[i]))
+                                {
+                                    object? value = null;
+
+                                    if (property.PropertyType == typeof(DateTime?))
+                                    {
+                                        DateTime dateValue;
+                                        if (DateTime.TryParse(values[i], out dateValue))
+                                        {
+                                            value = dateValue;
+                                        }
+                                        else
+                                        {
+                                            value = null;
+                                        }
+                                    }
+                                    else
+                                    {
+                                        // For other property types, use Convert.ChangeType.
+                                        value = Convert.ChangeType(values[i], property.PropertyType);
+                                    }
+                                    property.SetValue(employee, value);
+                                }
+                            }
+                            employeeList.Add(employee);
+                        }
+                    }
+                }
+                else if (fileExtension == ".xls" || fileExtension == ".xlsx")
+                {
+                    System.Text.Encoding.RegisterProvider(System.Text.CodePagesEncodingProvider.Instance);
+                    using (var stream = File.Open(filePath, FileMode.Open, FileAccess.Read))
+                    {
+                        using (var reader = ExcelReaderFactory.CreateReader(stream))
+                        {
+                            var headers = reader.Read() ? Enumerable.Range(0, reader.FieldCount).Select(i => reader.GetString(i)).ToArray() : null;
+                            if (headers == null) return employeeList;
+
+                            Dictionary<string, PropertyInfo> headertoPropertyMap = new Dictionary<string, PropertyInfo>();
+                            PropertyInfo[] properties = typeof(Employee).GetProperties();
+                            foreach (var property in properties)
+                            {
+                                string? headerName = headers.FirstOrDefault(h => h != null && h.Trim().Equals(property.Name, StringComparison.InvariantCultureIgnoreCase));
+                                if (headerName != null)
+                                {
+                                    headertoPropertyMap.Add(headerName, property);
+                                }
+                            }
+
+                            while (reader.Read())
+                            {
+                                if (Enumerable.Range(0, reader.FieldCount).All(i => reader.IsDBNull(i))) continue; // Skip empty rows (all columns are null)
+                                Employee employee = new Employee();
+                                for (int i = 0; i < reader.FieldCount; i++)
+                                {
+                                    string? headerName = i < headers.Length && headers[i] != null ? headers[i].Trim() : null;
+                                    if (string.IsNullOrWhiteSpace(headerName)) continue;
+                                    //PropertyInfo? property = properties.FirstOrDefault(p => p.Name.Equals(headerName, StringComparison.InvariantCultureIgnoreCase));
+                                    PropertyInfo? property = headertoPropertyMap.GetValueOrDefault(headerName);
+                                    if (property != null && !reader.IsDBNull(i))
+                                    {
+                                        object? value = null;
+
+                                        if (property.PropertyType == typeof(DateTime?))
+                                        {
+                                            DateTime dateValue;
+                                            if (DateTime.TryParse(reader.GetValue(i).ToString().AsSpan(), out dateValue))
+                                            {
+                                                value = dateValue;
+                                            }
+                                            else
+                                            {
+                                                value = null;
+                                            }
+                                        }
+                                        else
+                                        {
+                                            // For other property types, use Convert.ChangeType.
+                                            value = Convert.ChangeType(reader.GetValue(i), property.PropertyType);
+                                        }
+                                        
+                                        property.SetValue(employee, value);
+                                    }
+                                }
+                                employeeList.Add(employee);
+                            }
+                        }
+                    }
+                }
+            }
+            catch
+            {
+                throw;
+            }
+            return employeeList;
+        }
+
+        public void InsertEmployees(List<Employee> employees)
+        {
+            using (var connection = new SqlConnection(_connectionString))
+            {
+                connection.Open();
+
+                using (var transaction = connection.BeginTransaction())
+                {
+                    try
+                    {
+                        foreach (var employee in employees)
+                        {
+                            if (!string.IsNullOrEmpty(employee.AvaName))
+                            {
+                                employee.AvaName = "/hr_images/avatar/" + employee.AvaName;
+                            }
+                            using (SqlCommand command = connection.CreateCommand())
+                            {
+                                command.Transaction = transaction;
+                                command.CommandType = System.Data.CommandType.StoredProcedure;
+                                command.CommandText = "[dbo].[CreateEmployee]";
+
+                                command.Parameters.AddWithValue("@ID", employee.ID);
+                                command.Parameters.AddWithValue("@FirstName", employee.FirstName);
+                                command.Parameters.AddWithValue("@MiddleName", employee.MiddleName ?? (object)DBNull.Value);
+                                command.Parameters.AddWithValue("@LastName", employee.LastName);
+                                command.Parameters.AddWithValue("@Gender", employee.Gender ?? (object)DBNull.Value);
+                                command.Parameters.AddWithValue("@DateOfBirth", employee.DateOfBirth ?? (object)DBNull.Value);
+                                command.Parameters.AddWithValue("@PhoneNumber", employee.PhoneNumber ?? (object)DBNull.Value);
+                                command.Parameters.AddWithValue("@Email", employee.Email ?? (object)DBNull.Value);
+                                command.Parameters.AddWithValue("@LocalAddress", employee.LocalAddress ?? (object)DBNull.Value);
+                                command.Parameters.AddWithValue("@PositionID", employee.PositionID);
+                                command.Parameters.AddWithValue("@Salary", employee.Salary ?? (object)DBNull.Value);
+                                command.Parameters.AddWithValue("@StartDate", employee.StartDate ?? (object)DBNull.Value);
+                                command.Parameters.AddWithValue("@EndDate", employee.EndDate ?? (object)DBNull.Value);
+                                command.Parameters.AddWithValue("@AvaName", employee.AvaName ?? (object)DBNull.Value);
+
+                                command.ExecuteNonQuery();
+                            }
+                        }
+                        transaction.Commit();
+                    }
+                    catch
+                    {
+                        transaction.Rollback();
+                        throw;
+                    }
+                }
+                connection.Close();
             }
         }
 

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "s4W00TUVz5mT7yaT/Dm0u1EW/a4MDgZY3hB6RKfvS8s=",
+  "Hash": "AGqbD2bNN1jhsPTrloyKtkSXA7yUe8YpnuIFayYPUng=",
   "Source": "ManagerWebApplication",
   "BasePath": "_content/ManagerWebApplication",
   "Mode": "Default",
@@ -17,10 +17,10 @@
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\Hudson Le Tuan\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
+      "Identity": "C:\\Users\\Hudson Le Tuan\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.1\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
       "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Hudson Le Tuan\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Hudson Le Tuan\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.1\\staticwebassets\\",
       "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
       "RelativePath": "Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css",
       "AssetKind": "All",
@@ -33,13 +33,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hudson Le Tuan\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Hudson Le Tuan\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.1\\staticwebassets\\Microsoft.AspNetCore.Components.QuickGrid.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Hudson Le Tuan\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\QuickGrid.razor.js",
+      "Identity": "C:\\Users\\Hudson Le Tuan\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.1\\staticwebassets\\QuickGrid.razor.js",
       "SourceId": "Microsoft.AspNetCore.Components.QuickGrid",
       "SourceType": "Package",
-      "ContentRoot": "C:\\Users\\Hudson Le Tuan\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\",
+      "ContentRoot": "C:\\Users\\Hudson Le Tuan\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.1\\staticwebassets\\",
       "BasePath": "_content/Microsoft.AspNetCore.Components.QuickGrid",
       "RelativePath": "QuickGrid.razor.js",
       "AssetKind": "All",
@@ -52,7 +52,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Hudson Le Tuan\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.0\\staticwebassets\\QuickGrid.razor.js"
+      "OriginalItemSpec": "C:\\Users\\Hudson Le Tuan\\.nuget\\packages\\microsoft.aspnetcore.components.quickgrid\\8.0.1\\staticwebassets\\QuickGrid.razor.js"
     },
     {
       "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\obj\\Debug\\net8.0\\scopedcss\\bundle\\ManagerWebApplication.styles.css",
@@ -150,12 +150,12 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\101-Tuan-Le.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\101-Tuan-Le.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/101-Tuan-Le.jpg",
+      "RelativePath": "hr_images/avatar/101-Tuan-Le.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -166,15 +166,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\101-Tuan-Le.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\101-Tuan-Le.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\101-Tuan-Lee.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\101-Tuan-Lee.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/101-Tuan-Lee.jpg",
+      "RelativePath": "hr_images/avatar/101-Tuan-Lee.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -185,15 +185,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\101-Tuan-Lee.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\101-Tuan-Lee.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\102-Loan-Tran.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\102-Loan-Tran.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/102-Loan-Tran.jpg",
+      "RelativePath": "hr_images/avatar/102-Loan-Tran.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -204,15 +204,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\102-Loan-Tran.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\102-Loan-Tran.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\103-Loan-Tran.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\103-Loan-Tran.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/103-Loan-Tran.jpg",
+      "RelativePath": "hr_images/avatar/103-Loan-Tran.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -223,15 +223,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\103-Loan-Tran.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\103-Loan-Tran.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\104-Loan-Tran.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\104-Loan-Tran.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/104-Loan-Tran.jpg",
+      "RelativePath": "hr_images/avatar/104-Loan-Tran.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -242,15 +242,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\104-Loan-Tran.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\104-Loan-Tran.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\105-Loan-Tran.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\105-Loan-Tran.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/105-Loan-Tran.jpg",
+      "RelativePath": "hr_images/avatar/105-Loan-Tran.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -261,15 +261,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\105-Loan-Tran.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\105-Loan-Tran.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\106-Loan-Tran.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\106-Loan-Tran.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/106-Loan-Tran.jpg",
+      "RelativePath": "hr_images/avatar/106-Loan-Tran.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -280,15 +280,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\106-Loan-Tran.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\106-Loan-Tran.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\10787891-4776-4b89-ba5d-cd9289517c47.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\10787891-4776-4b89-ba5d-cd9289517c47.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/10787891-4776-4b89-ba5d-cd9289517c47.jpg",
+      "RelativePath": "hr_images/avatar/10787891-4776-4b89-ba5d-cd9289517c47.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -299,15 +299,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\10787891-4776-4b89-ba5d-cd9289517c47.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\10787891-4776-4b89-ba5d-cd9289517c47.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\107-Loan-Tran.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\107-Loan-Tran.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/107-Loan-Tran.jpg",
+      "RelativePath": "hr_images/avatar/107-Loan-Tran.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -318,15 +318,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\107-Loan-Tran.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\107-Loan-Tran.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\113-Loan-Tran.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\113-20240121034225.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/113-Loan-Tran.jpg",
+      "RelativePath": "hr_images/avatar/113-20240121034225.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -337,15 +337,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\113-Loan-Tran.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\113-20240121034225.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\114-Loan-Tran.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\113-20240121034243.png",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/114-Loan-Tran.jpg",
+      "RelativePath": "hr_images/avatar/113-20240121034243.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -356,15 +356,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\114-Loan-Tran.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\113-20240121034243.png"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\115-20231222T145028.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\113-Loan-Tran.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/115-20231222T145028.jpg",
+      "RelativePath": "hr_images/avatar/113-Loan-Tran.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -375,15 +375,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\115-20231222T145028.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\113-Loan-Tran.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\116-20231222145140.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\114-Loan-Tran.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/116-20231222145140.jpg",
+      "RelativePath": "hr_images/avatar/114-Loan-Tran.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -394,15 +394,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\116-20231222145140.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\114-Loan-Tran.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\117-20231222145336.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\115-20231222T145028.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/117-20231222145336.jpg",
+      "RelativePath": "hr_images/avatar/115-20231222T145028.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -413,15 +413,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\117-20231222145336.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\115-20231222T145028.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\117-Loan-Tran.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\116-20231222145140.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/117-Loan-Tran.jpg",
+      "RelativePath": "hr_images/avatar/116-20231222145140.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -432,15 +432,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\117-Loan-Tran.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\116-20231222145140.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\118-20231222145713.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\117-20231222145336.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/118-20231222145713.jpg",
+      "RelativePath": "hr_images/avatar/117-20231222145336.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -451,15 +451,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\118-20231222145713.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\117-20231222145336.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\118-Loan-Tran.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\117-Loan-Tran.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/118-Loan-Tran.jpg",
+      "RelativePath": "hr_images/avatar/117-Loan-Tran.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -470,15 +470,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\118-Loan-Tran.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\117-Loan-Tran.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\119-20231222150241.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\118-20231222145713.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/119-20231222150241.jpg",
+      "RelativePath": "hr_images/avatar/118-20231222145713.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -489,15 +489,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\119-20231222150241.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\118-20231222145713.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\119-Loan-Tran.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\118-Loan-Tran.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/119-Loan-Tran.jpg",
+      "RelativePath": "hr_images/avatar/118-Loan-Tran.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -508,15 +508,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\119-Loan-Tran.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\118-Loan-Tran.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\120-20231222150404.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\119-20231222150241.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/120-20231222150404.jpg",
+      "RelativePath": "hr_images/avatar/119-20231222150241.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -527,15 +527,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\120-20231222150404.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\119-20231222150241.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\120-Loan-Tran.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\119-Loan-Tran.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/120-Loan-Tran.jpg",
+      "RelativePath": "hr_images/avatar/119-Loan-Tran.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -546,15 +546,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\120-Loan-Tran.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\119-Loan-Tran.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\121-20231222150516.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\120-20231222150404.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/121-20231222150516.jpg",
+      "RelativePath": "hr_images/avatar/120-20231222150404.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -565,15 +565,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\121-20231222150516.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\120-20231222150404.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\121-Loan-Tran.jpeg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\120-Loan-Tran.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/121-Loan-Tran.jpeg",
+      "RelativePath": "hr_images/avatar/120-Loan-Tran.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -584,15 +584,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\121-Loan-Tran.jpeg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\120-Loan-Tran.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\121-Loan-Tran.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\121-20231222150516.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/121-Loan-Tran.jpg",
+      "RelativePath": "hr_images/avatar/121-20231222150516.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -603,15 +603,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\121-Loan-Tran.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\121-20231222150516.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\122-20231222150711.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\121-Loan-Tran.jpeg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/122-20231222150711.jpg",
+      "RelativePath": "hr_images/avatar/121-Loan-Tran.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -622,15 +622,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\122-20231222150711.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\121-Loan-Tran.jpeg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\122-Loan-Tran.jpeg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\121-Loan-Tran.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/122-Loan-Tran.jpeg",
+      "RelativePath": "hr_images/avatar/121-Loan-Tran.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -641,15 +641,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\122-Loan-Tran.jpeg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\121-Loan-Tran.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\122-Loan-Tran.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\122-20231222150711.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/122-Loan-Tran.jpg",
+      "RelativePath": "hr_images/avatar/122-20231222150711.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -660,15 +660,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\122-Loan-Tran.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\122-20231222150711.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\123-20231222150912.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\122-Loan-Tran.jpeg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/123-20231222150912.jpg",
+      "RelativePath": "hr_images/avatar/122-Loan-Tran.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -679,15 +679,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\123-20231222150912.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\122-Loan-Tran.jpeg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\123-20231222151552.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\122-Loan-Tran.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/123-20231222151552.jpg",
+      "RelativePath": "hr_images/avatar/122-Loan-Tran.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -698,15 +698,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\123-20231222151552.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\122-Loan-Tran.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\123-20231222151902.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\123-20231222150912.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/123-20231222151902.jpg",
+      "RelativePath": "hr_images/avatar/123-20231222150912.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -717,15 +717,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\123-20231222151902.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\123-20231222150912.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\123-Loan-Tran.jpeg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\123-20231222151552.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/123-Loan-Tran.jpeg",
+      "RelativePath": "hr_images/avatar/123-20231222151552.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -736,15 +736,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\123-Loan-Tran.jpeg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\123-20231222151552.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\123-Loan-Tran.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\123-20231222151902.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/123-Loan-Tran.jpg",
+      "RelativePath": "hr_images/avatar/123-20231222151902.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -755,15 +755,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\123-Loan-Tran.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\123-20231222151902.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\124-20231222152043.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\123-Loan-Tran.jpeg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/124-20231222152043.jpg",
+      "RelativePath": "hr_images/avatar/123-Loan-Tran.jpeg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -774,15 +774,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\124-20231222152043.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\123-Loan-Tran.jpeg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\124-Loan-Tran.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\123-Loan-Tran.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/124-Loan-Tran.jpg",
+      "RelativePath": "hr_images/avatar/123-Loan-Tran.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -793,15 +793,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\124-Loan-Tran.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\123-Loan-Tran.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\125-20231222152208.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\124-20231222152043.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/125-20231222152208.jpg",
+      "RelativePath": "hr_images/avatar/124-20231222152043.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -812,15 +812,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\125-20231222152208.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\124-20231222152043.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\125-Loan-Tran.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\124-Loan-Tran.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/125-Loan-Tran.jpg",
+      "RelativePath": "hr_images/avatar/124-Loan-Tran.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -831,15 +831,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\125-Loan-Tran.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\124-Loan-Tran.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\126-20231222152305.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\125-20231222152208.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/126-20231222152305.jpg",
+      "RelativePath": "hr_images/avatar/125-20231222152208.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -850,15 +850,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\126-20231222152305.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\125-20231222152208.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\126-20231222152739.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\125-Loan-Tran.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/126-20231222152739.jpg",
+      "RelativePath": "hr_images/avatar/125-Loan-Tran.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -869,15 +869,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\126-20231222152739.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\125-Loan-Tran.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\127-20231222153553.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\126-20231222152305.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/127-20231222153553.jpg",
+      "RelativePath": "hr_images/avatar/126-20231222152305.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -888,15 +888,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\127-20231222153553.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\126-20231222152305.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\127-20231222153852.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\126-20231222152739.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/127-20231222153852.jpg",
+      "RelativePath": "hr_images/avatar/126-20231222152739.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -907,15 +907,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\127-20231222153852.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\126-20231222152739.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\127-20231222154346.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\127-20231222153553.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/127-20231222154346.jpg",
+      "RelativePath": "hr_images/avatar/127-20231222153553.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -926,15 +926,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\127-20231222154346.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\127-20231222153553.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\127-20231222154440.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\127-20231222153852.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/127-20231222154440.jpg",
+      "RelativePath": "hr_images/avatar/127-20231222153852.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -945,15 +945,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\127-20231222154440.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\127-20231222153852.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\127-20231222154629.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\127-20231222154346.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/127-20231222154629.jpg",
+      "RelativePath": "hr_images/avatar/127-20231222154346.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -964,15 +964,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\127-20231222154629.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\127-20231222154346.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\128-20231222155025.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\127-20231222154440.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/128-20231222155025.jpg",
+      "RelativePath": "hr_images/avatar/127-20231222154440.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -983,15 +983,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\128-20231222155025.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\127-20231222154440.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\129-20231222155051.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\127-20231222154629.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/129-20231222155051.jpg",
+      "RelativePath": "hr_images/avatar/127-20231222154629.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1002,15 +1002,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\129-20231222155051.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\127-20231222154629.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\129-20231222155130.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\128-20231222155025.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/129-20231222155130.jpg",
+      "RelativePath": "hr_images/avatar/128-20231222155025.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1021,15 +1021,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\129-20231222155130.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\128-20231222155025.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\129-20231222160533.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\129-20231222155051.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/129-20231222160533.jpg",
+      "RelativePath": "hr_images/avatar/129-20231222155051.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1040,15 +1040,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\129-20231222160533.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\129-20231222155051.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\129-20231222160555.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\129-20231222155130.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/129-20231222160555.jpg",
+      "RelativePath": "hr_images/avatar/129-20231222155130.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1059,15 +1059,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\129-20231222160555.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\129-20231222155130.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\129-Loan-Tran.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\129-20231222160533.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/129-Loan-Tran.jpg",
+      "RelativePath": "hr_images/avatar/129-20231222160533.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1078,15 +1078,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\129-Loan-Tran.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\129-20231222160533.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\130-20231222161333.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\129-20231222160555.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/130-20231222161333.jpg",
+      "RelativePath": "hr_images/avatar/129-20231222160555.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1097,15 +1097,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\130-20231222161333.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\129-20231222160555.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\131-20231222161352.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\129-Loan-Tran.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/131-20231222161352.jpg",
+      "RelativePath": "hr_images/avatar/129-Loan-Tran.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1116,15 +1116,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\131-20231222161352.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\129-Loan-Tran.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\131-Loan-Tran.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\130-20231222161333.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/131-Loan-Tran.jpg",
+      "RelativePath": "hr_images/avatar/130-20231222161333.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1135,15 +1135,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\131-Loan-Tran.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\130-20231222161333.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\132-20231222161415.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\131-20231222161352.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/132-20231222161415.jpg",
+      "RelativePath": "hr_images/avatar/131-20231222161352.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1154,15 +1154,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\132-20231222161415.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\131-20231222161352.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\132-Loan-Tran.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\131-Loan-Tran.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/132-Loan-Tran.jpg",
+      "RelativePath": "hr_images/avatar/131-Loan-Tran.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1173,15 +1173,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\132-Loan-Tran.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\131-Loan-Tran.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\133-20231222161450.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\132-20231222161415.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/133-20231222161450.jpg",
+      "RelativePath": "hr_images/avatar/132-20231222161415.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1192,15 +1192,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\133-20231222161450.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\132-20231222161415.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\133-Loan-Tran.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\132-Loan-Tran.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/133-Loan-Tran.jpg",
+      "RelativePath": "hr_images/avatar/132-Loan-Tran.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1211,15 +1211,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\133-Loan-Tran.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\132-Loan-Tran.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\134-20231222161526.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\133-20231222161450.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/134-20231222161526.jpg",
+      "RelativePath": "hr_images/avatar/133-20231222161450.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1230,15 +1230,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\134-20231222161526.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\133-20231222161450.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\134-Loan-Tran.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\133-Loan-Tran.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/134-Loan-Tran.jpg",
+      "RelativePath": "hr_images/avatar/133-Loan-Tran.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1249,15 +1249,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\134-Loan-Tran.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\133-Loan-Tran.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\135-20231222161547.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\134-20231222161526.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/135-20231222161547.jpg",
+      "RelativePath": "hr_images/avatar/134-20231222161526.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1268,15 +1268,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\135-20231222161547.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\134-20231222161526.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\139-20231227034204.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\134-Loan-Tran.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/139-20231227034204.jpg",
+      "RelativePath": "hr_images/avatar/134-Loan-Tran.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1287,15 +1287,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\139-20231227034204.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\134-Loan-Tran.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\146-20231231235226.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\135-20231222161547.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/146-20231231235226.jpg",
+      "RelativePath": "hr_images/avatar/135-20231222161547.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1306,15 +1306,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\146-20231231235226.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\135-20231222161547.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\147-20240101222408.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\139-20231227034204.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/147-20240101222408.jpg",
+      "RelativePath": "hr_images/avatar/139-20231227034204.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1325,15 +1325,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\147-20240101222408.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\139-20231227034204.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\147-20240101224833.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\146-20231231235226.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/147-20240101224833.jpg",
+      "RelativePath": "hr_images/avatar/146-20231231235226.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1344,15 +1344,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\147-20240101224833.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\146-20231231235226.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\147-20240101224850.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\147-20240101222408.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/147-20240101224850.jpg",
+      "RelativePath": "hr_images/avatar/147-20240101222408.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1363,15 +1363,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\147-20240101224850.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\147-20240101222408.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\147-20240101224903.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\147-20240101224833.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/147-20240101224903.jpg",
+      "RelativePath": "hr_images/avatar/147-20240101224833.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1382,15 +1382,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\147-20240101224903.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\147-20240101224833.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\41a68735-573b-49ba-9276-c95bb77208fe.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\147-20240101224850.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/41a68735-573b-49ba-9276-c95bb77208fe.jpg",
+      "RelativePath": "hr_images/avatar/147-20240101224850.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1401,15 +1401,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\41a68735-573b-49ba-9276-c95bb77208fe.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\147-20240101224850.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\Alex Gonley.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\147-20240101224903.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/Alex Gonley.jpg",
+      "RelativePath": "hr_images/avatar/147-20240101224903.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1420,15 +1420,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\Alex Gonley.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\147-20240101224903.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\Alson GC.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\163-20240118013155.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/Alson GC.jpg",
+      "RelativePath": "hr_images/avatar/163-20240118013155.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1439,15 +1439,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\Alson GC.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\163-20240118013155.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\ava-default.png",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\41a68735-573b-49ba-9276-c95bb77208fe.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/ava-default.png",
+      "RelativePath": "hr_images/avatar/41a68735-573b-49ba-9276-c95bb77208fe.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1458,15 +1458,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\ava-default.png"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\41a68735-573b-49ba-9276-c95bb77208fe.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\b11c2d98-3c3d-4509-99d7-e16615436dc9.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\ava-default.png",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/b11c2d98-3c3d-4509-99d7-e16615436dc9.jpg",
+      "RelativePath": "hr_images/avatar/ava-default.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1477,15 +1477,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\b11c2d98-3c3d-4509-99d7-e16615436dc9.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\ava-default.png"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\csv.png",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\b11c2d98-3c3d-4509-99d7-e16615436dc9.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/csv.png",
+      "RelativePath": "hr_images/avatar/b11c2d98-3c3d-4509-99d7-e16615436dc9.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1496,15 +1496,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\csv.png"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\b11c2d98-3c3d-4509-99d7-e16615436dc9.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\da386f22-7e83-4cbb-9c2a-cbd1b08f72eb.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\da386f22-7e83-4cbb-9c2a-cbd1b08f72eb.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/da386f22-7e83-4cbb-9c2a-cbd1b08f72eb.jpg",
+      "RelativePath": "hr_images/avatar/da386f22-7e83-4cbb-9c2a-cbd1b08f72eb.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1515,15 +1515,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\da386f22-7e83-4cbb-9c2a-cbd1b08f72eb.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\da386f22-7e83-4cbb-9c2a-cbd1b08f72eb.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\excel.png",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\f0c42c9f-b29c-447f-9250-4e5c3717339c.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/excel.png",
+      "RelativePath": "hr_images/avatar/f0c42c9f-b29c-447f-9250-4e5c3717339c.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1534,15 +1534,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\excel.png"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\f0c42c9f-b29c-447f-9250-4e5c3717339c.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\export.png",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\tuanquocle.jpg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/export.png",
+      "RelativePath": "hr_images/avatar/tuanquocle.jpg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1553,15 +1553,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\export.png"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\tuanquocle.jpg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\f0c42c9f-b29c-447f-9250-4e5c3717339c.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\avatar\\white-temp.webp",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/f0c42c9f-b29c-447f-9250-4e5c3717339c.jpg",
+      "RelativePath": "hr_images/avatar/white-temp.webp",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1572,15 +1572,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\f0c42c9f-b29c-447f-9250-4e5c3717339c.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\avatar\\white-temp.webp"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\html_table.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\others\\addfile.svg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/html_table.jpg",
+      "RelativePath": "hr_images/others/addfile.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1591,15 +1591,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\html_table.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\others\\addfile.svg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\Jeet Saru.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\others\\csv.png",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/Jeet Saru.jpg",
+      "RelativePath": "hr_images/others/csv.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1610,15 +1610,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\Jeet Saru.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\others\\csv.png"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\json.png",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\others\\excel.png",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/json.png",
+      "RelativePath": "hr_images/others/excel.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1629,15 +1629,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\json.png"
+      "OriginalItemSpec": "wwwroot\\hr_images\\others\\excel.png"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\pdf.png",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\others\\export.png",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/pdf.png",
+      "RelativePath": "hr_images/others/export.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1648,15 +1648,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\pdf.png"
+      "OriginalItemSpec": "wwwroot\\hr_images\\others\\export.png"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\Sarita Limbu.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\others\\import.svg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/Sarita Limbu.jpg",
+      "RelativePath": "hr_images/others/import.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1667,15 +1667,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\Sarita Limbu.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\others\\import.svg"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\screenshot.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\others\\json.png",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/screenshot.jpg",
+      "RelativePath": "hr_images/others/json.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1686,15 +1686,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\screenshot.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\others\\json.png"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\search.png",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\others\\pdf.png",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/search.png",
+      "RelativePath": "hr_images/others/pdf.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1705,15 +1705,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\search.png"
+      "OriginalItemSpec": "wwwroot\\hr_images\\others\\pdf.png"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\Sonal Gharti.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\others\\search.png",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/Sonal Gharti.jpg",
+      "RelativePath": "hr_images/others/search.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1724,15 +1724,15 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\Sonal Gharti.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\others\\search.png"
     },
     {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\tuanquocle.jpg",
+      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\hr_images\\others\\tempfile.svg",
       "SourceId": "ManagerWebApplication",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
       "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/tuanquocle.jpg",
+      "RelativePath": "hr_images/others/tempfile.svg",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
@@ -1743,45 +1743,7 @@
       "AssetTraitValue": "",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\tuanquocle.jpg"
-    },
-    {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\white-temp.webp",
-      "SourceId": "ManagerWebApplication",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
-      "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/white-temp.webp",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\white-temp.webp"
-    },
-    {
-      "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\images\\Zinzu Chan Lee.jpg",
-      "SourceId": "ManagerWebApplication",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\",
-      "BasePath": "_content/ManagerWebApplication",
-      "RelativePath": "images/Zinzu Chan Lee.jpg",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\Zinzu Chan Lee.jpg"
+      "OriginalItemSpec": "wwwroot\\hr_images\\others\\tempfile.svg"
     },
     {
       "Identity": "D:\\COMPUTER SCIENCE\\PROJECTS\\DotNetWebApp\\ManagerWebApp\\ManagerWebApplication\\wwwroot\\js\\EmployeeJS.js",
