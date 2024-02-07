@@ -1,6 +1,8 @@
 ﻿using ManagerWebApplication.DAL;
 using ManagerWebApplication.Models;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.IO.Compression;
 
 namespace ManagerWebApplication.Controllers
 {
@@ -137,6 +139,90 @@ namespace ManagerWebApplication.Controllers
                 return Json(new { success = true });
             }
             return Json(new { success = false, message = "No file uploaded or the file is empty." });
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> UploadEmployeeImagesFolder(List<IFormFile> employeeImages)
+        {
+            var uploadPath = Path.Combine(_hostEnvironment.WebRootPath, "hr_images/avatar");
+
+            foreach (var image in employeeImages)
+            {
+                if (image != null && image.Length > 0 && new[] { ".jpg", ".jpeg", ".png", ".gif" }.Contains(Path.GetExtension(image.FileName).ToLowerInvariant()))
+                {
+                    var imageName = Path.GetFileName(image.FileName);
+                    var imagePath = Path.Combine(uploadPath, imageName);
+
+                    using (var imageStream = new FileStream(imagePath, FileMode.Create))
+                    {
+                        await image.CopyToAsync(imageStream);
+                    }
+                }
+            }
+            return Json(new { message = "Uploaded!" });
+        }
+
+        [HttpPost]
+        [RequestFormLimits(MultipartBodyLengthLimit = 52428800)]
+        public IActionResult UploadEmployeeImagesZip()
+        {
+            var files = Request.Form.Files;
+            if (files.Count == 0)
+            {
+                return BadRequest("No file uploaded or the file is empty.");
+            }
+
+            var tempPath = Path.Combine(_hostEnvironment.WebRootPath, "temp");
+            var uploadPath = Path.Combine(_hostEnvironment.WebRootPath, "hr_images/avatar");
+
+            if (!Directory.Exists(tempPath))
+            {
+                Directory.CreateDirectory(tempPath);
+            }
+            if (!Directory.Exists(uploadPath))
+            {
+                Directory.CreateDirectory(uploadPath);
+            }
+
+            foreach (var formFile in files)
+            {
+                if (formFile.Length > 0)
+                {
+                    if (Path.GetExtension(formFile.FileName).Equals(".zip", StringComparison.OrdinalIgnoreCase))
+                    {
+                        var tempZipPath = Path.Combine(_hostEnvironment.WebRootPath, "temp", formFile.FileName);
+                        using (var stream = new FileStream(tempZipPath, FileMode.Create))
+                        {
+                            formFile.CopyTo(stream);
+                        }
+                        // Open zip file
+                        using (var zip = ZipFile.OpenRead(tempZipPath))
+                        {
+                            foreach (var entry in zip.Entries)
+                            {
+                                if (new[] {".jpg", ".jpeg", ".png", ".gif"}.Contains(Path.GetExtension(entry.FullName).ToLowerInvariant()))
+                                {
+                                    var extractPath = Path.Combine(uploadPath, Path.GetFileName(entry.FullName));
+                                    entry.ExtractToFile(extractPath, overwrite: true);
+                                }
+                            }
+                        }
+                        System.IO.File.Delete(tempZipPath);
+                    }
+                    else
+                    {
+                        if (new[] {".jpg", ".jpeg", ".png", ".gif"}.Contains(Path.GetExtension(formFile.FileName).ToLowerInvariant()))
+                        {
+                            var imagePath = Path.Combine(uploadPath, formFile.FileName);
+                            using (var imageStream = new FileStream(imagePath, FileMode.Create))
+                            {
+                                formFile.CopyTo(imageStream);
+                            }
+                        }
+                    }
+                }
+            }
+            return Json(new { message = "Uploaded!" });
         }
 
         [HttpGet]

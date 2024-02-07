@@ -568,4 +568,62 @@
             }
         });
     });
+
+    // Upload Employee Images
+
+    //Open Upload Image Modal
+    const eIUploadBtn = document.getElementById('uploadImageFile');
+    const eIFileInput = document.getElementById('uploadEmployeeImages');
+    eIUploadBtn.addEventListener('click', function () {
+        eIFileInput.click();
+    });
+
+    document.getElementById('uploadImageFolder').addEventListener('change', function (event) {
+        const files = event.target.files;
+        if (files.length > 0) {
+            // Create a FormData object to hold the file
+            const formData = new FormData();
+            for (let i = 0; i < files.length; i++) {
+                formData.append('employeeImages', files[i]);
+            }
+            //Send the file to the server using AJAX
+            fetch('/Employee/UploadEmployeeImagesFolder', {
+                method: 'POST',
+                body: formData
+            })
+                .then(response => response.json())
+                .then(result => {
+                    alert('Upload images successfully');
+                })
+                .catch(error => {
+                    alert('Error uploading images');
+                    console.error('Error:', error);
+                });
+        }
+    });
+
+    document.getElementById('zipimageFilesInput').addEventListener('change', function (event) {
+        const files = this.files;
+        if (files.length > 0) {
+            const formData = new FormData();
+            for (let i = 0; i < files.length; i++) {
+                formData.append('files', files[i]);
+            }
+
+            $.ajax({
+                url: '/Employee/UploadEmployeeImagesZip',
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (response) {
+                    alert('Upload images successfully');
+                },
+                error: function (error) {
+                    alert('Error uploading images');
+                    console.log(error);
+                }
+            });
+        }
+    });
 });

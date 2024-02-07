@@ -1,0 +1,78 @@
+﻿<div class="emp-img-upload-container">
+    <div class="emp-img-upload-card">
+        <h3>Upload Specific Files</h3>
+        <div class="emp-img-upload-dropbox">
+            <h4>Support .zip or images files</h4>
+            <br />
+            <input type="file" hidden accept=".zip, .jpg, .jpeg, .png, .gif" multiple id="zipimageFilesInput" style="display:none;" />
+            <input type="button" class="btn btn-outline-light" onclick="document.getElementById('zipimageFilesInput').click()" value="Upload Your Files" />
+        </div>
+    </div>
+    <div class="emp-img-upload-card">
+        <h3>Upload Folder</h3>
+        <div class="emp-img-upload-dropbox">
+            <h4>Support folder</h4>
+            <br />
+            <input type="file" id="uploadImageFolder" name="uploadImagesFolder[]" multiple directory webkitdirectory style="display: none;">
+            <input type="button" class="btn btn-outline-light" onclick="document.getElementById('uploadImageFolder').click()" value="Upload Your Folder" />
+        </div>
+    </div>
+</div>
+<p align="center"><i>*Only <b>.zip, .jpg, .jpeg, .png, .gif</b> files are supported.</i></p>
+<div align="center"><button type="button" class="btn btn-secondary ms-1" data-bs-dismiss="modal" aria-label="Close">Close</button></div>
+
+<style>
+    .emp-img-upload-container {
+        height: 40vh;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .emp-img-upload-card {
+        border-radius: 10px;
+        box-shadow: 0 0 10px 0 #a3a3a3a3;
+        width: 40%;
+        padding: 20px 30px 30px;
+        margin: 0 20px;
+    }
+
+    .emp-img-upload-card h3 {
+        text-align: center;
+        font-size: 22px;
+        font-weight: 600;
+    }
+
+    .emp-img-upload-dropbox {
+        height: 100%;
+        margin: 10px 0;
+        padding: 30px 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        border: 3px dotted #a3a3a3;
+        border-radius: 5px;
+    }
+
+    .emp-img-upload-dropbox h4 {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    .emp-img-upload-dropbox p {
+        margin-top: 10px;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+
+    .emp-img-upload-container .form input {
+        margin: 10px 0;
+        width: 100%;
+        border: none;
+        outline: none;
+        padding: 12px 20px;
+        border-radius: 4px;
+    }
+
+</style>

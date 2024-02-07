@@ -35,9 +35,11 @@
                     <input type="checkbox" id="import-file">
                     <div class="import__file-options">
                         <label>&#10140; &nbsp; Import File</label>
-                        <label for="import-file" class="temp-down">&#8595; Template <img src="/hr_images/others/tempfile.svg" alt=""></label>
-                        <label for="import-file" class="emp-upload" id="uploadEmpFile">&#8593; Upload <img src="/hr_images/others/addfile.svg" alt=""></label>
+                        <label for="import-file" class="temp-down">&#129095; Template <img src="/hr_images/others/filetemp.svg" alt=""></label>
+                        <label for="import-file" class="emp-upload" id="uploadEmpFile">&#129093; Upload <img src="/hr_images/others/fileadd.svg" alt=""></label>
                         <input type="file" id="employeeFile" name="eFile" style="display: none;" accept=".csv, .xls, .xlsx">
+                        <label for="import-file" class="image-upload" id="uploadImageFile">&#129093; Images <img src="/hr_images/others/imageadd.svg" alt=""></label>
+                        <button class="emp-img-upload" id="uploadEmployeeImages" data-bs-toggle="modal" data-bs-target="#uploadEmployeeImageBox" hidden></button>
                     </div>
                 </div>
                 <div class="button-header">
@@ -68,10 +70,10 @@
                     <input type="checkbox" id="export-file">
                     <div class="export__file-options">
                         <label>Export As &nbsp; &#10140;</label>
-                        <label for="export-file" id="toEXCEL">EXCEL <img src="/hr_images/others/excel.png" alt=""></label>
-                        <label for="export-file" id="toPDF">PDF <img src="/hr_images/others/pdf.png" alt=""></label>
+                        <label for="export-file" id="toEXCEL">EXCEL <img src="/hr_images/others/xlsex.png" alt=""></label>
+                        <label for="export-file" id="toPDF">PDF <img src="/hr_images/others/pdfex.png" alt=""></label>
                         <label for="export-file" id="toJSON" hidden>JSON <img src="/hr_images/others/json.png" alt=""></label>
-                        <label for="export-file" id="toCSV">CSV <img src="/hr_images/others/csv.png" alt=""></label>
+                        <label for="export-file" id="toCSV">CSV <img src="/hr_images/others/csvex.png" alt=""></label>
                     </div>
                 </div>
             </section>
@@ -185,6 +187,21 @@
                     </div>
                     <div class="modal-body">
                         <div id="editEmployee"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal uploading employee images -->
+        <div class="modal fade" id="uploadEmployeeImageBox" tabindex="-1" role="dialog" data-bs-backdrop="static" aria-labelledby="uploadEmployeeImageBoxLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" hidden>
+                        <h5 class="modal-title" id="uploadEmployeeImageBoxLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <partial name="_UploadEmployeeImageBox" />
                     </div>
                 </div>
             </div>
