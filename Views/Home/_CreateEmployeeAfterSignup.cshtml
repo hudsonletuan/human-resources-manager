@@ -1,13 +1,10 @@
-﻿@{
-    List<Employee>? departments = ViewData["Departments"] as List<Employee>;
-}
-
+﻿
 <div class="modal-header" hidden>
-    <h5 class="modal-title" id="createEmployeeModalLabel">Create Employee</h5>
+    <h5 class="modal-title" id="createEmployeeModalAfterSignupLabel">Create Employee</h5>
     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 </div>
 <section>
-    <form id="createEmployeeForm" method="post" enctype="multipart/form-data">
+    <form id="createEmployeeAfterSignupForm" method="post" enctype="multipart/form-data">
         <div class="container-xxl">
             <div class="row">
                 <div class="col-lg-4">
@@ -27,18 +24,18 @@
                         <div class="card-body text-center">
                             <img src="/hr_images/avatar/ava-default.png" alt="avatar"
                                  id="avatarImage" class="rounded-circle img-fluid" style="width: 150px; height: 150px; object-fit: cover;">
-                                 <hr />
+                            <hr />
                             <div class="d-flex justify-content-center mb-2">
-                                <input type="file" class="form-control mb-0" id="imageFile" name="imageFile" 
-                                accept="image/jpg, image/jpeg, image/png, image/webp" hidden/>
+                                <input type="file" class="form-control mb-0" id="imageFile" name="imageFile"
+                                       accept="image/jpg, image/jpeg, image/png, image/webp" hidden />
                                 <input type="button" class="btn btn-outline-secondary btn-sm" id="imageBtn" onclick="document.getElementById('imageFile').click()" value="Upload Your Image" />
-                             </div>
+                            </div>
                         </div>
                         <div class="card-body text-center">
                             <div class="d-flex justify-content-center mb-2">
                                 <button type="submit" class="btn btn-success">Create</button>
                                 <button type="button" class="btn btn-warning btn-clear ms-1">Clear</button>
-                                <button type="button" class="btn btn-secondary ms-1" data-bs-dismiss="modal" id="closeCreateModalBtn" aria-label="Close">Close</button>
+                                <button type="button" class="btn btn-secondary ms-1" data-bs-dismiss="modal" aria-label="Close">Close</button>
                             </div>
                         </div>
                     </div>
@@ -61,15 +58,11 @@
                                 </div>
                             </div>
                             <hr>
-                            <div class="row" id="createDpPs">
+                            <div class="row" id="createDpPsAfterSignup">
                                 <div class="col-auto">
                                     <label for="departmentName" class="form-label mb-0 required-input">Department</label>
                                     <select class="form-control form-select mb-0" id="departmentName" name="departmentName" required>
-                                        <option value="" class="default-department" style="color: gray">Select...</option>
-                                        @foreach (var department in ViewData["Departments"] as List<Employee>)
-                                        {
-                                            <option value="@department.DepartmentID">@department.DepartmentName</option>
-                                        }
+                                        <option value="" class="default-department"></option>
                                     </select>
                                 </div>
                                 <div class="col-auto">
@@ -83,8 +76,8 @@
                             <div class="row">
                                 <div class="row" style="margin-bottom: 10px;">
                                     <div class="col-auto">
-                                        <label for="genderCreate" class="form-label mb-0 form-gender-label">Gender</label>
-                                        <select class="form-control form-select mb-0 form-gender-dropdown" id="genderCreate" name="genderCreate">
+                                        <label for="genderCreateAfterSignup" class="form-label mb-0 form-gender-label">Gender</label>
+                                        <select class="form-control form-select mb-0 form-gender-dropdown" id="genderCreateAfterSignup" name="genderCreateAfterSignup">
                                             <option value="" class="default-gender">Select...</option>
                                         </select>
                                     </div>
@@ -130,7 +123,7 @@
 </section>
 
 <!-- Modal showing success-->
-<div class="modal fade" id="createSuccess" tabindex="-1" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false">
+<div class="modal fade" id="createSuccessAfterSignup" tabindex="-1" role="dialog" data-bs-backdrop="static" data-bs-keyboard="false">
     <div class="modal-dialog modal-dialog-centered modal-sm modal-success" role="document">
         <div class="modal-content">
             <div class="modal-body text-center p-lg-4">
@@ -147,7 +140,7 @@
 </div>
 
 <!-- Modal showing conflict confirmation -->
-<div class="modal fade" id="createErrorModal" tabindex="-1" role="dialog" data-bs-backdrop="static">
+<div class="modal fade" id="createErrorAfterSignupModal" tabindex="-1" role="dialog" data-bs-backdrop="static">
     <div class="modal-dialog modal-dialog-centered modal-sm create-error" role="document">
         <div class="modal-content">
             <div class="modal-body text-center p-lg-4">
