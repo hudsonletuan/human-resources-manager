@@ -144,10 +144,12 @@ body {
 }
 #logInModal .login-span {
     background-color: #14a44d;
+    cursor: pointer;
 }
 #logInModal .signup-span {
     /*background-color: #3b71ca;*/
     background-color: #dc4c64;
+    cursor: pointer;
 }
 
 #logInModal .section {
