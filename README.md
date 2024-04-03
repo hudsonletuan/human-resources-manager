@@ -89,4 +89,4 @@ If you would like to contribute to the Human Resources Manager, please follow th
 
 ## License
 
-The Human Resources Manager is licensed under the [MIT License](LICENSE).
+The Human Resources Manager is restricted from any commercial uses without permission.
