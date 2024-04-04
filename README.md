@@ -1,6 +1,6 @@
 # Human Resources Manager - ASP.NET Core Project
 
-The Human Resources Manager is a web-based application designed to manage employee information for a company. The application allows users to create, read, update, and delete employee records, as well as import employee data from EXCEL and CSV files and export employee data to Excel, PDF, and CSV files.
+The Human Resources Manager is a web-based application created to manage employee information for a company. The application allows users to create, read, update, and delete employee records, as well as import employee data from EXCEL and CSV files and export employee data to Excel, PDF, and CSV files.
 
 <h3 align="center"> Deployed on Azure </h3>
 <p align="center">
