@@ -160,6 +160,19 @@
         });
     });
 
+    $('#editEmployeeModal').off('show.bs.modal').on('show.bs.modal', function () {
+        let employeeID = $('#editEmployeeForm .container-xl').data('employee-id');
+        let userID = sessionStorage.getItem('userID');
+        if (employeeID === userID) {
+            $('.btn-emp-edit-del').css('display', 'none');
+            $('#editEmployeeForm #email').prop('readOnly', true);
+            $('#editEmployeeForm #email').css('background-color', 'transparent')
+        } else {
+            $('.btn-emp-edit-del').css('display', 'block');
+            $('#editEmployeeForm #email').prop('readOnly', false);
+        }
+    });
+
     $(document).off('click', '#usermenu-edit').on('click', '#usermenu-edit', function () {
         let userID = sessionStorage.getItem('userID');
         let employeeID = userID;
