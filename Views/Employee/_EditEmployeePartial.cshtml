@@ -4,7 +4,7 @@
 {
     <section>
         <form id="editEmployeeForm" method="post" enctype="multipart/form-data">
-            <div class="container-xl">
+            <div class="container-xl" data-employee-id="@Model.EmployeeID">
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="card mb-4">
@@ -24,7 +24,7 @@
                                 <div class="row">
                                     <div class="card-body text-center">
                                         <div class="d-flex justify-content-center mb-2">
-                                            <button type="button" class="btn btn-danger delete-employee" data-employee-id="@Model.EmployeeID">Delete</button>
+                                            <button type="button" class="btn btn-danger delete-employee btn-emp-edit-del" data-employee-id="@Model.EmployeeID">Delete</button>
                                         </div>
                                     </div>
                                 </div>
@@ -155,6 +155,19 @@ else
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function () {
+        let userID = sessionStorage.getItem('userID');
+        let employeeID = $('.container-xl').data('employee-id');
+        if (employeeID === userID) {
+            $('.btn-emp-edit-del').css('display', 'none');
+        } else {
+            $('.btn-emp-edit-del').css('display', 'block');
+        }
+    });
+</script>
+
 <style>
     .modal-success .modal-content {
         border-radius: 30px;

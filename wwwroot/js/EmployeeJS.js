@@ -226,6 +226,11 @@
     //Delete employee
     $(document).off('click', '.delete-employee').on('click', '.delete-employee', function () {
         employeeID = $(this).data('employee-id');
+        userID = sessionStorage.getItem('userID');
+        if (employeeID === userID) {
+            alert('You cannot delete your own account');
+            return;
+        }
         let firstName = $(this).closest('tr').find('.employee-firstname').text() || $('.employee-firstname-view').text();
         let lastName = $(this).closest('tr').find('.employee-lastname').text() || $('.employee-lastname-view').text();
         button = $(this);
@@ -287,13 +292,13 @@
     // Select All & Unselect All
     $('.select-all').off('click').on('click', function (e) {
         e.preventDefault();
-        document.querySelectorAll('.row-checkbox').forEach(checkbox => {
+        document.querySelectorAll('#employeeTableBody tr:not([style*="display: none"]) .row-checkbox').forEach(checkbox => {
             checkbox.checked = true;
         });
     });
     $('.unselect-all').off('click').on('click', function (e) {
         e.preventDefault();
-        document.querySelectorAll('.row-checkbox').forEach(checkbox => {
+        document.querySelectorAll('#employeeTableBody tr:not([style*="display: none"]) .row-checkbox').forEach(checkbox => {
             checkbox.checked = false;
         });
     });
@@ -362,6 +367,9 @@
             let id = $(this).closest('tr').find('.employee-id').text();
             selectedIDs.push(id);
         });
+
+        let userID = sessionStorage.getItem('userID');
+        selectedIDs = selectedIDs.filter(id => id !== userID);
 
         if (selectedIDs.length === 0) {
             alert('No employee selected');

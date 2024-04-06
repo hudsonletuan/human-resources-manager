@@ -3,7 +3,7 @@
 @if (Model != null)
 {
     <section>
-        <div class="container-xl">
+        <div class="container-xl" data-employee-id="@Model.EmployeeID">
             <div class="row">
                 <div class="col-lg-4">
                     <div class="card mb-4">
@@ -20,7 +20,7 @@
                                 <button type="button" class="btn btn-success ms-1" id="sendEmailToEmp" data-bs-toggle="modal" data-bs-target="#sendingEmailModal">Email</button>
                                 <button type="button" class="btn btn-secondary ms-1" data-bs-dismiss="modal" aria-label="Close">Close</button>
                             </div>
-                            <div class="card-body text-center">
+                            <div class="card-body text-center btn-emp-detail-del">
                                 <div class="d-flex justify-content-center mb-2">
                                     <button type="button" class="btn btn-danger delete-employee ms-1" data-employee-id="@Model.EmployeeID">Delete</button>
                                 </div>
@@ -165,6 +165,14 @@ else
 
 <script>
     $(document).ready(function () {
+        let userID = sessionStorage.getItem('userID');
+        let employeeID = $('.container-xl').data('employee-id');
+        if (employeeID === userID) {
+            $('.btn-emp-detail-del').css('display', 'none');
+        } else {
+            $('.btn-emp-detail-del').css('display', 'block');
+        }
+
         function setEmailSenderInput() {
             let userEmail = sessionStorage.getItem('userEmail');
             if (userEmail) {
