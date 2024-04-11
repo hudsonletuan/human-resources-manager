@@ -161,13 +161,30 @@
             type: 'GET',
             data: { id: employeeID },
             success: function (data) {
-                $('#viewEmployeeModal').modal('hide');
-                $('#editEmployee').html(data);
-                $('#editEmployeeModal').modal('show');
-                getPositionOnOpen("editEmployeeForm");
-                getGenderOptions("genderUpdate");
-                getPositionbyDepartment("editEmployeeForm");
-                imageUpdateChange("imageFileUpdate", "avatarImageUpdate");
+                let $data = $(data);
+                let avatarImage = $data.find('.employee-avatar-image-edit');
+                let avatarUrl = avatarImage.attr('src');
+                
+                fetch(avatarUrl, { method: 'HEAD' })
+                    .then(response => {
+                        if (!response.ok) {
+                            avatarImage.attr('src', "/hr_images/avatar/ava-default.png");
+                        }
+                        data = $data.prop('outerHTML');
+                    })
+                    .catch(error => {
+                        avatarImage.attr('src', "/hr_images/avatar/ava-default.png");
+                        data = $data.prop('outerHTML');
+                    })
+                    .finally(() => {
+                        $('#viewEmployeeModal').modal('hide');
+                        $('#editEmployee').html(data);
+                        $('#editEmployeeModal').modal('show');
+                        getPositionOnOpen("editEmployeeForm");
+                        getGenderOptions("genderUpdate");
+                        getPositionbyDepartment("editEmployeeForm");
+                        imageUpdateChange("imageFileUpdate", "avatarImageUpdate");
+                    });
             },
             error: function () {
                 let errorMessage = 'An error occurred while retrieving employee details.';
