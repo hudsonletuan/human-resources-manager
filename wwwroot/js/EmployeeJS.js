@@ -125,8 +125,25 @@
             type: 'GET',
             data: { id: employeeID },
             success: function (data) {
-                $('#employeeDetails').html(data);
-                $('#viewEmployeeModal').modal('show');
+                let $data = $(data);
+                let avatarImage = $data.find('.employee-avatar-image');
+                let avatarUrl = avatarImage.attr('src');
+                
+                fetch(avatarUrl, { method: 'HEAD' })
+                    .then(response => {
+                        if (!response.ok) {
+                            avatarImage.attr('src', "/hr_images/avatar/ava-default.png");
+                        }
+                        data = $data.prop('outerHTML');
+                    })
+                    .catch(error => {
+                        avatarImage.attr('src', "/hr_images/avatar/ava-default.png");
+                        data = $data.prop('outerHTML');
+                    })
+                    .finally(() => {
+                        $('#employeeDetails').html(data);
+                        $('#viewEmployeeModal').modal('show');
+                    });
             },
             error: function () {
                 let errorMessage = 'An error occurred while retrieving employee details.';
